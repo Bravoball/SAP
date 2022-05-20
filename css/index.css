@@ -1,0 +1,832 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+section.kv {
+  width: 100%;
+  height: 768px;
+  position: relative; }
+  @media only screen and (max-width: 950px) {
+    section.kv {
+      height: 424px;
+      padding-bottom: 140px; } }
+  section.kv .video {
+    width: 100%;
+    height: 100%;
+    background-color: #000; }
+    @media only screen and (max-width: 750px) {
+      section.kv .video {
+        display: none; } }
+    section.kv .video .vsc-controller {
+      display: none; }
+    section.kv .video video {
+      width: 100%;
+      height: 100%; }
+  section.kv .gif_box {
+    width: 100%;
+    height: 424px;
+    display: none; }
+    @media only screen and (max-width: 750px) {
+      section.kv .gif_box {
+        display: block; } }
+    section.kv .gif_box .slick-list {
+      overflow: hidden; }
+    section.kv .gif_box .slick-dots {
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin-top: -30px; }
+      section.kv .gif_box .slick-dots li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 5px; }
+        section.kv .gif_box .slick-dots li button {
+          border: none;
+          text-indent: -9999px;
+          background-color: transparent;
+          width: 10px;
+          height: 10px;
+          cursor: pointer;
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.1); }
+        section.kv .gif_box .slick-dots li.slick-active button {
+          background-color: rgba(0, 0, 0, 0.8); }
+    section.kv .gif_box .item {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%; }
+      section.kv .gif_box .item .img {
+        width: 100%;
+        height: 424px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover; }
+  section.kv .more {
+    font-weight: bold;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 24px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 5; }
+    @media only screen and (max-width: 750px) {
+      section.kv .more {
+        bottom: 70px; } }
+
+section.site {
+  padding: 80px 0 20px; }
+  @media only screen and (max-width: 950px) {
+    section.site {
+      padding: 20px 0; } }
+  @media only screen and (max-width: 750px) {
+    section.site {
+      padding: 20px 0 80px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid #e5e5e5; } }
+  section.site .inner {
+    width: 1080px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 1200px) {
+      section.site .inner {
+        width: 730px; } }
+    @media only screen and (max-width: 750px) {
+      section.site .inner {
+        width: 100%; } }
+    section.site .inner .title {
+      margin-bottom: 40px; }
+      @media only screen and (max-width: 750px) {
+        section.site .inner .title {
+          width: calc(100% - 40px);
+          margin: 0 auto;
+          margin-bottom: 40px;
+          text-align: center; } }
+      section.site .inner .title::after {
+        content: "";
+        display: block;
+        clear: both; }
+      section.site .inner .title .ticon {
+        float: left;
+        margin-right: 45px;
+        width: 92px; }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .title .ticon {
+            float: none;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: bottom; } }
+      section.site .inner .title h2 {
+        float: left;
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: 500;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        letter-spacing: 5px; }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .title h2 {
+            font-size: 24px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            float: none;
+            display: inline-block;
+            vertical-align: bottom; } }
+      section.site .inner .title p {
+        float: left;
+        width: 745px;
+        margin-right: 150px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 1px; }
+        @media only screen and (max-width: 1200px) {
+          section.site .inner .title p {
+            width: 590px;
+            margin-right: 0px; } }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .title p {
+            float: none;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            width: 100%; } }
+    section.site .inner .main .tag {
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 750px) {
+        section.site .inner .main .tag {
+          width: calc(100% - 40px);
+          margin: 0 auto;
+          margin-bottom: 20px; } }
+      section.site .inner .main .tag::after {
+        content: "";
+        display: block;
+        clear: both; }
+      section.site .inner .main .tag .more {
+        float: right;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 18px; }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .main .tag .more {
+            display: none; } }
+    section.site .inner .main .item_box [class^="item"] {
+      display: none;
+      position: relative; }
+      section.site .inner .main .item_box [class^="item"].active {
+        display: block; }
+      section.site .inner .main .item_box [class^="item"] .slick-list {
+        overflow: hidden;
+        margin-bottom: 40px;
+        position: relative; }
+        section.site .inner .main .item_box [class^="item"] .slick-list::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 70px;
+          height: 100%;
+          z-index: 5;
+          background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+          background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+          background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+          background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+          display: none; }
+          @media only screen and (max-width: 750px) {
+            section.site .inner .main .item_box [class^="item"] .slick-list::before {
+              display: block; } }
+        section.site .inner .main .item_box [class^="item"] .slick-list::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 70px;
+          height: 100%;
+          z-index: 5;
+          background: -webkit-gradient(linear, right top, left top, from(white), to(rgba(255, 255, 255, 0)));
+          background: -webkit-linear-gradient(right, white 0%, rgba(255, 255, 255, 0) 100%);
+          background: -o-linear-gradient(right, white 0%, rgba(255, 255, 255, 0) 100%);
+          background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+          display: none; }
+          @media only screen and (max-width: 750px) {
+            section.site .inner .main .item_box [class^="item"] .slick-list::after {
+              display: block; } }
+      section.site .inner .main .item_box [class^="item"] .slick-prev, section.site .inner .main .item_box [class^="item"] .slick-next {
+        position: absolute;
+        width: 53px;
+        height: 53px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        top: 90px;
+        border: none;
+        text-indent: -9999px;
+        z-index: 9;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 5px; }
+        section.site .inner .main .item_box [class^="item"] .slick-prev:after, section.site .inner .main .item_box [class^="item"] .slick-next:after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border: solid #58B9D8;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 2px;
+          top: 20px;
+          left: 15px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      section.site .inner .main .item_box [class^="item"] .slick-prev {
+        left: 0px; }
+        section.site .inner .main .item_box [class^="item"] .slick-prev:after {
+          left: 20px;
+          -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          transform: rotate(135deg); }
+      section.site .inner .main .item_box [class^="item"] .slick-next {
+        right: 0px; }
+      section.site .inner .main .item_box [class^="item"] .slick-dots {
+        text-align: center; }
+        section.site .inner .main .item_box [class^="item"] .slick-dots li {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 5px; }
+          section.site .inner .main .item_box [class^="item"] .slick-dots li button {
+            border: none;
+            text-indent: -9999px;
+            background-color: transparent;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.1); }
+          section.site .inner .main .item_box [class^="item"] .slick-dots li.slick-active button {
+            background-color: rgba(0, 0, 0, 0.8); }
+      section.site .inner .main .item_box [class^="item"] a {
+        display: inline-block;
+        width: 335px;
+        height: 360px;
+        vertical-align: top;
+        margin-right: 36px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative; }
+        @media only screen and (max-width: 1200px) {
+          section.site .inner .main .item_box [class^="item"] a {
+            width: 230px;
+            height: 100%;
+            margin-right: 20px; } }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .main .item_box [class^="item"] a.slick-center .info:after {
+            opacity: 1; } }
+        @media only screen and (min-width: 751px) {
+          section.site .inner .main .item_box [class^="item"] a:hover .info:after {
+            opacity: 1; } }
+        section.site .inner .main .item_box [class^="item"] a figure {
+          width: 100%;
+          height: 100%; }
+          @media only screen and (max-width: 1200px) {
+            section.site .inner .main .item_box [class^="item"] a figure {
+              height: 230px; } }
+        section.site .inner .main .item_box [class^="item"] a .info {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 20px;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.95);
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          @media only screen and (max-width: 1200px) {
+            section.site .inner .main .item_box [class^="item"] a .info {
+              position: relative;
+              background-color: #fff;
+              padding: 20px 0; } }
+          section.site .inner .main .item_box [class^="item"] a .info:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #58B9D8;
+            opacity: 0;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+          section.site .inner .main .item_box [class^="item"] a .info h4 {
+            opacity: 0.4;
+            margin-bottom: 15px; }
+            @media only screen and (max-width: 1200px) {
+              section.site .inner .main .item_box [class^="item"] a .info h4 {
+                font-size: 14px; } }
+            section.site .inner .main .item_box [class^="item"] a .info h4.hat {
+              background-image: url(../images/icon01.svg);
+              background-repeat: no-repeat;
+              padding-left: 30px; }
+          section.site .inner .main .item_box [class^="item"] a .info h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px; }
+            @media only screen and (max-width: 750px) {
+              section.site .inner .main .item_box [class^="item"] a .info h3 {
+                margin-bottom: 10px; } }
+          section.site .inner .main .item_box [class^="item"] a .info p {
+            display: none;
+            margin-top: 10px; }
+            @media only screen and (max-width: 1200px) {
+              section.site .inner .main .item_box [class^="item"] a .info p {
+                display: block !important; } }
+          section.site .inner .main .item_box [class^="item"] a .info .cate {
+            margin-top: 10px;
+            opacity: 0.4; }
+
+section.lecture {
+  padding: 80px 0 20px; }
+  @media only screen and (max-width: 750px) {
+    section.lecture {
+      padding: 20px 0 80px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid #e5e5e5; } }
+  section.lecture .inner {
+    width: 1080px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 1200px) {
+      section.lecture .inner {
+        width: 730px; } }
+    @media only screen and (max-width: 750px) {
+      section.lecture .inner {
+        width: 100%; } }
+    @media only screen and (max-width: 750px) {
+      section.lecture .inner .title {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center; } }
+    section.lecture .inner .title::after {
+      content: "";
+      display: block;
+      clear: both; }
+    section.lecture .inner .title .ticon {
+      float: left;
+      margin-right: 45px;
+      width: 78px; }
+      @media only screen and (max-width: 750px) {
+        section.lecture .inner .title .ticon {
+          float: none;
+          margin-right: 20px;
+          display: inline-block;
+          vertical-align: bottom; } }
+    section.lecture .inner .title h2 {
+      float: left;
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: 500;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      letter-spacing: 5px; }
+      @media only screen and (max-width: 750px) {
+        section.lecture .inner .title h2 {
+          font-size: 24px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          float: none;
+          display: inline-block;
+          vertical-align: bottom; } }
+    section.lecture .inner .title p {
+      float: left;
+      width: 745px;
+      margin-right: 150px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 1px; }
+      @media only screen and (max-width: 1200px) {
+        section.lecture .inner .title p {
+          width: 590px;
+          margin-right: 0px; } }
+      @media only screen and (max-width: 750px) {
+        section.lecture .inner .title p {
+          float: none;
+          display: block;
+          text-align: left;
+          margin-top: 10px;
+          width: 100%; } }
+    section.lecture .inner .tag {
+      margin-bottom: 20px; }
+      section.lecture .inner .tag::after {
+        content: "";
+        display: block;
+        clear: both; }
+      section.lecture .inner .tag .more {
+        float: right;
+        font-size: 14px;
+        font-weight: 500; }
+        @media only screen and (max-width: 750px) {
+          section.lecture .inner .tag .more {
+            display: none; } }
+    section.lecture .inner .top2 {
+      margin-bottom: 50px; }
+      @media only screen and (max-width: 1200px) {
+        section.lecture .inner .top2 {
+          text-align: center; } }
+      @media only screen and (max-width: 750px) {
+        section.lecture .inner .top2 {
+          width: calc(100% - 40px);
+          max-width: 336px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+          border-bottom: 1px solid #58B9D8; } }
+      section.lecture .inner .top2 a {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 36px;
+        overflow: hidden;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 522px;
+        height: 254px;
+        background-color: #f6f6f6; }
+        section.lecture .inner .top2 a:last-child {
+          margin-right: 0; }
+        @media only screen and (max-width: 1200px) {
+          section.lecture .inner .top2 a {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+            text-align: left; }
+            section.lecture .inner .top2 a:last-child {
+              margin-bottom: 0; } }
+        @media only screen and (max-width: 750px) {
+          section.lecture .inner .top2 a {
+            width: 336px;
+            height: auto;
+            background-color: #fff; } }
+        @media only screen and (min-width: 751px) {
+          section.lecture .inner .top2 a:hover .info:after {
+            opacity: 1; }
+          section.lecture .inner .top2 a:hover .info .school {
+            display: none; }
+          section.lecture .inner .top2 a:hover .info .detail {
+            display: block; } }
+        section.lecture .inner .top2 a figure {
+          display: inline-block;
+          vertical-align: top;
+          width: 210px; }
+          @media only screen and (max-width: 750px) {
+            section.lecture .inner .top2 a figure {
+              display: block;
+              width: 100%; } }
+        section.lecture .inner .top2 a .info {
+          display: inline-block;
+          vertical-align: top;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 20px 10px;
+          width: calc(100% - 210px);
+          height: 100%;
+          margin-left: -4px;
+          position: relative; }
+          @media only screen and (max-width: 750px) {
+            section.lecture .inner .top2 a .info {
+              width: 100%; } }
+          section.lecture .inner .top2 a .info:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #58B9D8;
+            opacity: 0;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+          section.lecture .inner .top2 a .info .row {
+            opacity: 0.4;
+            margin-bottom: 20px; }
+            section.lecture .inner .top2 a .info .row .date {
+              display: inline-block;
+              vertical-align: top;
+              background-image: url(../images/icon02.svg);
+              background-repeat: no-repeat;
+              padding-left: 25px;
+              margin-right: 20px; }
+            section.lecture .inner .top2 a .info .row .place {
+              display: inline-block;
+              vertical-align: top;
+              background-image: url(../images/icon03.svg);
+              background-repeat: no-repeat;
+              padding-left: 25px; }
+          section.lecture .inner .top2 a .info h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 15px; }
+          section.lecture .inner .top2 a .info .teacher {
+            margin-bottom: 10px; }
+            section.lecture .inner .top2 a .info .teacher .cate {
+              display: inline-block;
+              vertical-align: top;
+              color: #fff;
+              padding: 2px 8px;
+              background-color: #58B9D8;
+              margin-right: 8px;
+              font-weight: 300; }
+            section.lecture .inner .top2 a .info .teacher span {
+              display: inline-block;
+              vertical-align: top;
+              font-size: 20px; }
+          @media only screen and (max-width: 750px) {
+            section.lecture .inner .top2 a .info .school {
+              display: none; } }
+          section.lecture .inner .top2 a .info .detail {
+            display: none; }
+            @media only screen and (max-width: 750px) {
+              section.lecture .inner .top2 a .info .detail {
+                display: none; } }
+    @media only screen and (max-width: 750px) {
+      section.lecture .inner .list {
+        width: 336px;
+        margin: 0 auto; } }
+    section.lecture .inner .list .slick-list {
+      overflow: hidden;
+      margin-bottom: 40px; }
+    section.lecture .inner .list .slick-dots {
+      text-align: center; }
+      section.lecture .inner .list .slick-dots li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 5px; }
+        section.lecture .inner .list .slick-dots li button {
+          border: none;
+          text-indent: -9999px;
+          background-color: transparent;
+          width: 10px;
+          height: 10px;
+          cursor: pointer;
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.1); }
+        section.lecture .inner .list .slick-dots li.slick-active button {
+          background-color: rgba(0, 0, 0, 0.8); }
+    section.lecture .inner .list .item {
+      display: inline-block;
+      vertical-align: top; }
+      @media only screen and (max-width: 750px) {
+        section.lecture .inner .list .item {
+          width: 336px;
+          margin-right: 20px; } }
+      section.lecture .inner .list .item a {
+        display: inline-block;
+        vertical-align: top;
+        background-color: #f6f6f6;
+        width: 336px;
+        margin-right: 36px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden; }
+        @media only screen and (max-width: 1200px) {
+          section.lecture .inner .list .item a {
+            margin-right: 20px;
+            width: 230px;
+            padding: 20px 10px; } }
+        @media only screen and (max-width: 750px) {
+          section.lecture .inner .list .item a {
+            width: 336px;
+            margin-right: 0;
+            margin-bottom: 15px;
+            padding: 20px; } }
+        section.lecture .inner .list .item a:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #58B9D8;
+          opacity: 0;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+        @media only screen and (min-width: 751px) {
+          section.lecture .inner .list .item a:hover:after {
+            opacity: 1; } }
+        section.lecture .inner .list .item a .cate {
+          display: inline-block;
+          vertical-align: top;
+          color: #fff;
+          padding: 2px 8px;
+          background-color: #58B9D8;
+          font-weight: 300;
+          margin-right: 8px;
+          margin-bottom: 15px; }
+        section.lecture .inner .list .item a .row {
+          opacity: 0.4;
+          margin-bottom: 20px; }
+          section.lecture .inner .list .item a .row .date {
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(../images/icon02.svg);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+            margin-right: 20px; }
+          section.lecture .inner .list .item a .row .place {
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(../images/icon03.svg);
+            background-repeat: no-repeat;
+            padding-left: 25px; }
+        section.lecture .inner .list .item a h3 {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 24px; }
+
+section.course {
+  padding: 80px 0 60px; }
+  @media only screen and (max-width: 950px) {
+    section.course {
+      padding: 20px 0; } }
+  @media only screen and (max-width: 750px) {
+    section.course {
+      padding: 20px 0 130px; } }
+  section.course .inner {
+    width: 1080px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 1200px) {
+      section.course .inner {
+        width: 730px; } }
+    @media only screen and (max-width: 750px) {
+      section.course .inner {
+        width: 100%; } }
+    @media only screen and (max-width: 750px) {
+      section.course .inner .title {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center; } }
+    section.course .inner .title::after {
+      content: "";
+      display: block;
+      clear: both; }
+    section.course .inner .title .ticon {
+      float: left;
+      margin-right: 45px; }
+      @media only screen and (max-width: 750px) {
+        section.course .inner .title .ticon {
+          float: none;
+          margin-right: 20px;
+          display: inline-block;
+          vertical-align: bottom; } }
+    section.course .inner .title h2 {
+      float: left;
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: 500;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      letter-spacing: 5px; }
+      @media only screen and (max-width: 750px) {
+        section.course .inner .title h2 {
+          font-size: 24px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          float: none;
+          display: inline-block;
+          vertical-align: bottom; } }
+    section.course .inner .title p {
+      float: left;
+      width: 745px;
+      margin-right: 150px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 1px; }
+      @media only screen and (max-width: 1200px) {
+        section.course .inner .title p {
+          width: 590px;
+          margin-right: 0px; } }
+      @media only screen and (max-width: 750px) {
+        section.course .inner .title p {
+          float: none;
+          display: block;
+          text-align: left;
+          margin-top: 10px;
+          width: 100%; } }
+    section.course .inner .main .tag {
+      margin-bottom: 20px; }
+      section.course .inner .main .tag::after {
+        content: "";
+        display: block;
+        clear: both; }
+      section.course .inner .main .tag .more {
+        float: right;
+        font-size: 14px;
+        font-weight: 500; }
+        @media only screen and (max-width: 750px) {
+          section.course .inner .main .tag .more {
+            display: none; } }
+    @media only screen and (max-width: 1200px) {
+      section.course .inner .main .list {
+        text-align: center; } }
+    @media only screen and (max-width: 750px) {
+      section.course .inner .main .list {
+        width: calc(100% - 40px);
+        max-width: 336px;
+        margin: 0 auto;
+        margin-bottom: 20px; } }
+    section.course .inner .main .list a {
+      display: inline-block;
+      width: 335px;
+      height: 360px;
+      vertical-align: top;
+      margin-right: 36px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative; }
+      section.course .inner .main .list a:nth-child(3n) {
+        margin-right: 0; }
+      @media only screen and (max-width: 1200px) {
+        section.course .inner .main .list a {
+          text-align: left; }
+          section.course .inner .main .list a:nth-child(3n) {
+            margin-right: 36px; }
+          section.course .inner .main .list a:nth-child(2n) {
+            margin-right: 0; } }
+      @media only screen and (max-width: 750px) {
+        section.course .inner .main .list a {
+          margin-bottom: 30px;
+          height: auto;
+          margin-right: 0; }
+          section.course .inner .main .list a:nth-child(3n) {
+            margin-right: 0; }
+          section.course .inner .main .list a:nth-child(2n) {
+            margin-right: 0; } }
+      @media only screen and (min-width: 751px) {
+        section.course .inner .main .list a:hover .info:after {
+          opacity: 1; }
+        section.course .inner .main .list a:hover .info .cate {
+          display: none; } }
+      section.course .inner .main .list a figure {
+        width: 100%;
+        height: 100%; }
+      section.course .inner .main .list a .info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 20px 16px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        @media only screen and (max-width: 750px) {
+          section.course .inner .main .list a .info {
+            background-color: #fff;
+            position: relative; } }
+        section.course .inner .main .list a .info:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #58B9D8;
+          opacity: 0;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+        section.course .inner .main .list a .info .medal {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          right: 0;
+          background-image: url(../images/medal.svg);
+          top: -15px; }
+        section.course .inner .main .list a .info h4 {
+          opacity: 0.4;
+          margin-bottom: 15px; }
+          section.course .inner .main .list a .info h4.hat {
+            background-image: url(../images/icon01.svg);
+            background-repeat: no-repeat;
+            padding-left: 30px; }
+        section.course .inner .main .list a .info h3 {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 34px; }
+        section.course .inner .main .list a .info p {
+          display: none; }
+        section.course .inner .main .list a .info .cate {
+          margin-top: 10px;
+          color: #58B9D8; }
+          section.course .inner .main .list a .info .cate span {
+            opacity: 0.4; }

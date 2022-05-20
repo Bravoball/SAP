@@ -1,0 +1,140 @@
+doctype html
+html
+	head
+		include head.pug
+		
+		//- css
+		link(rel="stylesheet" href="css/lecture.css")
+
+		//- JS
+		script(src="js/slick.min.js" type="text/javascript")
+	body
+		include header.pug
+		
+		article
+			section.slide
+				.inner
+					.bread
+						a(href="index.html") 首頁 
+						span ｜高優講堂
+					.slide_box
+						h2 講堂名稱
+						p 說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說，明文字說明文字說明文字說，明文字說明文字說。明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文，字說明文字說明文字說明文字。
+						.slide_area
+							.item_box
+								.item.yt.active
+									.yt_img.active
+										.play
+										.black
+										figure
+											img(src="images/slide_img.png", alt="")
+									.yt_yt(yt="https://www.youtube.com/embed/h8rpdyGWz2Y")
+										iframe(src="" frameborder="0" allowfullscreen)
+								.item
+									img(src="images/slide_img.png", alt="")
+								.item
+									img(src="images/slide_img.png", alt="")
+								.item
+									img(src="images/slide_img.png", alt="")
+							.dot_box
+								.dot.active
+								.dot
+								.dot
+								.dot
+						span 圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字
+			section.editor
+				.inner
+					.info01
+						.left
+							h4 主持人
+								p 林國禎教授
+							h4 引言人
+								p 林國禎教授
+							h4 講者
+								p 林國禎教授
+							h4 與談人
+								p 臺北市陽明高中、桃園市壽山高中、臺中淸水高中、高雄市高雄女中、國立花蓮高中代表
+						.right
+							h4 時間
+								p 文字內容文字內容文字內容 
+							h4 地點
+								p 文字內容文字內容文字內容
+					.editor_box
+						h1 H1標題文字H1標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+						h2 H2標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+						h3 H3標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+
+						.img_box01
+							img(src="images/ed_img01.png", alt="")
+							span 圖片說明文字圖片說明文字圖片說明文字
+						.img_box02
+							.img
+								img(src="images/ed_img02.png", alt="")
+								span 圖片說明文字圖片說明文字圖片說明文字
+							.img
+								img(src="images/ed_img02.png", alt="")
+								span 圖片說明文字圖片說明文字圖片說明文字
+						.yt_box
+							iframe(src="https://www.youtube.com/embed/h8rpdyGWz2Y" frameborder="0" allowfullscreen)
+							span 圖片說明文字圖片說明文字圖片說明文字
+					.float
+						a(href="") #關鍵字
+						a(href="") #關鍵字關鍵字
+						a(href="") #關鍵關鍵字
+						a(href="") #關鍵字字
+						a(href="") #關鍵字關鍵
+						a(href="") #關鍵字 
+					.page_box
+						a.prev(href="lecture.html") 上一則
+						a(href="lecture_list.html") 回高優講堂
+						a.next(href="lecture.html") 下一則
+			section.site
+				.inner
+					h2 相關課程
+					.item_box
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+		include footer.pug
+					
+		script(src="js/lecture.js" type="text/javascript")

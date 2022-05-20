@@ -1,0 +1,111 @@
+doctype html
+html
+	head
+		include head.pug
+		
+		//- css
+		link(rel="stylesheet" href="css/school_list.css")
+
+		//- JS
+
+	body
+		include header.pug
+		
+		article
+			section.kv
+				.m_title 高優學校
+				.kv_img(style="background-image: url(images/school_kv.png)")
+				.main
+					.inner
+						h1 高優學校
+						p 「航向藍海」透過手中的課程藏寶圖，引領著大家以實體與影片的方式體驗各高中所發展出多元豐富的優質課程，讓大家瞭解新課綱各高中所發展出的課程新風貌。
+			section.tool
+				.inner
+					.bread
+						a(href="index.html") 首頁 
+						span ｜ 高優學校
+					.tag
+						form.search_box
+							.select_box
+								select
+									option(value="" disabled selected) 分區
+									option(value="") 北一區
+									option(value="") 北二區
+									option(value="") 北三區
+									option(value="") 中區
+									option(value="") 南區
+							.select_box.school
+								select
+									option(value="" disabled selected) 學校類型
+									option(value="") 普通型高級中等學校(普高)
+									option(value="") 技術型高級中等學校(技高)
+									option(value="") 綜合型高級中等學校(綜高)
+									option(value="") 單科型高級中等學校(單科高中)
+							input(type="text" placeholder="請輸入關鍵字")
+							a.search(href="") 搜尋
+							a.reset(href="javascript:void(0)") 清空
+						.info
+							p 標籤：＃關鍵字 或 搜尋結果：關鍵字
+							.total 共 12 則
+			section.list
+				.inner
+					.item_box
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+						a(href="school.html")
+							figure
+								img(src="images/school.png", alt="")
+							p 國立臺灣師範大學附屬高級中學
+					.page_box
+						a.prev(href="") 
+						a(href="") 1
+						a(href="") 2
+						span 3
+						a(href="") 4
+						a(href="") 5
+						a.next(href="") 
+		include footer.pug
+					
+		script(src="js/school_list.js" type="text/javascript")

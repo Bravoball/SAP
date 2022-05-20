@@ -1,0 +1,56 @@
+=rwd($w)
+	@media only screen and (max-width: $w)
+		@content
+=rwd23($w:1201px)
+	@media only screen and (min-width: $w)
+		@content
+=rwd22($w:951px)
+	@media only screen and (min-width: $w)
+		@content
+=rwd2($w:751px)
+	@media only screen and (min-width: $w)
+		@content
+=rwd3($h:900px)
+	@media only screen and (max-height: $h)
+		@content
+=rwd4($h:900px,$w:1100px)
+	@media only screen and (max-height: $h) and (max-width: $w)
+		@content
+=rwd5($h:900px,$w:900px)
+	@media only screen and (max-height: $h) and (max-width: $w)
+		@content
+=size($w,$h:$w,$bdrs:0)
+	width: $w
+	height: $h
+	border-radius: $bdrs
+=flex($j:center,$a:center)
+	display: flex
+	justify-content: $j
+	align-items: $a
+=abpos($l:initial,$t:initial)
+	position: absolute
+	left: $l
+	top: $t
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content 
+=animation($content)
+	-webkit-animation: $content
+	-moz-animation: $content
+	-o-animation: $content
+	animation: $content
+
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css')
+
+=NotoSans
+  font-family: 'Noto Sans TC', sans-serif
+
+$blue: #58B9D8
+$grey: #f6f6f6
+$grey2: #e5e5e5

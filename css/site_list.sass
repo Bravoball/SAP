@@ -1,0 +1,244 @@
+@charset "utf-8"
+@import "var.sass"
+
+section.kv
+    height: 420px
+    margin-bottom: 100px
+    +rwd(950px)
+        margin-bottom: 40px
+    +rwd(750px)
+        height: auto
+    &::after
+        content: ""
+        display: block
+        clear: both
+    .m_title
+        display: none
+        +rwd(750px)
+            display: block
+            font-size: 24px
+            font-weight: 500
+            line-height: 34px
+            padding: 40px 20px
+            letter-spacing: 5px
+    .kv_img
+        width: 50%
+        height: 100%
+        float: right
+        margin-left: -4px
+        display: inline-block
+        vertical-align: middle
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        +rwd(750px)
+            width: 100%
+            height: 350px
+            margin-left: 0
+            float: none
+        +rwd(420px)
+            height: 238px
+    .main
+        width: 50%
+        height: 100%
+        float: left
+        background-color: $grey
+        position: relative
+        box-sizing: border-box
+        border-bottom: 4px solid $blue
+        +rwd(750px)
+            width: 100%
+            background-color: #fff
+            border-bottom: 0px solid $blue
+            float: none
+        .inner
+            position: absolute
+            width: 520px
+            top: 50%
+            right: 35px
+            transform: translate(0,-50%)
+            +rwd(1200px)
+                box-sizing: border-box
+                width: 80%
+            +rwd(750px)
+                position: relative
+                top: initial
+                right: initial
+                transform: translate(0,0)
+                padding: 30px 0
+                width: calc(100% - 40px)
+                margin: 0 auto
+                border-bottom: 2px solid $blue
+            h1
+                font-size: 32px
+                line-height: 46px
+                font-weight: 500
+                letter-spacing: 4px
+                +rwd(750px)
+                    display: none
+            p
+                font-weight: 300
+                font-size: 18px
+                line-height: 32px
+                letter-spacing: 1px
+section.tool
+    margin-bottom: 20px
+    .inner
+        width: 1080px
+        margin: 0 auto
+        +rwd(1200px)
+            width: 730px
+        +rwd(750px)
+            width: calc(100% - 40px)
+        .bread
+            margin-bottom: 40px
+            a
+                letter-spacing: 0.2em
+            span
+                font-weight: 500
+                letter-spacing: 0.2em
+        .tag
+            +rwd(750px)
+                width: 100%
+                margin: 0 auto
+                padding-bottom: 30px
+                margin-bottom: 40px
+            &::after
+                content: ""
+                display: block
+                clear: both
+            .tag_box
+                float: left
+                +rwd(750px)
+                    float: none
+                    width: 340px
+                    margin: 0 auto
+                    margin-bottom: 40px
+                a.btn01
+                    +rwd(1200px)
+                        padding: 8px 20px
+                    +rwd(750px)
+                        padding: 8px 50px
+                        &:nth-child(2n)
+                            margin-right: 0
+                            
+            .search_box
+                float: right
+                +rwd(750px)
+                    float: none
+                    width: 340px
+                    margin: 0 auto
+                    margin-bottom: 20px
+                input
+                    +rwd(750px)
+                        width: calc(100% - 90px)
+                .search
+                    display: inline-block
+                    vertical-align: top
+                    font-weight: bold
+                    padding: 8px 24px
+                    border-radius: 2px
+                    color: #FFF
+                    background-color: rgba(0,0,0,0.8)
+            .info
+                float: left
+                display: block
+                width: 100%
+                margin-top: 20px
+                opacity: 0.6
+                +rwd(750px)
+                    float: none
+                    width: 340px
+                    margin: 0 auto
+                p
+                    float: left
+                .total
+                    float: right
+section.list
+    .inner
+        width: 1080px
+        margin: 0 auto
+        +rwd(1200px)
+            width: 730px
+        +rwd(750px)
+            width: calc(100% - 40px)
+            max-width: 336px
+        .item_box
+            margin-bottom: 60px
+            a
+                display: inline-block
+                width: 335px
+                height: 360px
+                vertical-align: top
+                margin-right: 36px
+                margin-bottom: 40px
+                border-radius: 5px
+                overflow: hidden
+                position: relative
+                &:nth-child(3n)
+                    margin-right: 0
+                +rwd(1200px)
+                    width: 230px
+                    height: 100%
+                    margin-right: 20px
+                +rwd(750px)
+                    width: 100%
+                +rwd2()
+                    &:hover
+                        .info
+                            &:after
+                                opacity: 1
+                figure
+                    width: 100%
+                    height: 100%
+                    +rwd(1200px)
+                        height: 230px
+                    +rwd(750px)
+                        width: 100%
+                        height: auto
+                .info
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    padding: 20px
+                    width: 100%
+                    background-color: rgba(255,255,255,0.95)
+                    box-sizing: border-box
+                    +rwd(1200px)
+                        position: relative
+                        background-color: #fff
+                        padding: 20px 0
+                    &:after
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        display: block
+                        width: 100%
+                        height: 4px
+                        background-color: $blue
+                        opacity: 0
+                        transition: .3s
+                    h4
+                        opacity: 0.4
+                        margin-bottom: 15px
+                        +rwd(1200px)
+                            font-size: 14px
+                        &.hat
+                            background-image: url(../images/icon01.svg)
+                            background-repeat: no-repeat
+                            padding-left: 30px
+                    h3
+                        font-size: 24px
+                        font-weight: 500
+                        line-height: 34px
+                        +rwd(750px)
+                            margin-bottom: 10px
+                    p
+                        display: none
+                        margin-top: 10px
+                        +rwd(1200px)
+                            display: block!important
+                    .cate
+                        margin-top: 10px
+                        opacity: 0.4

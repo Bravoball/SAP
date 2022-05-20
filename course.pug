@@ -1,0 +1,154 @@
+doctype html
+html
+	head
+		include head.pug
+		
+		//- css
+		link(rel="stylesheet" href="css/course.css")
+
+		//- JS
+		script(src="js/slick.min.js" type="text/javascript")
+	body
+		include header.pug
+		
+		article
+			section.slide
+				.inner
+					.bread
+						a(href="index.html") 首頁 
+						span ｜高優課程
+					.slide_box
+						h2 講堂名稱
+						p 說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說，明文字說明文字說明文字說，明文字說明文字說。明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文，字說明文字說明文字說明文字。
+						.slide_area
+							.item_box
+								.item.active
+									img(src="images/course_img.png", alt="")
+								.item
+									img(src="images/course_img.png", alt="")
+								.item
+									img(src="images/course_img.png", alt="")
+								.item
+									img(src="images/course_img.png", alt="")
+							.dot_box
+								.dot.active
+								.dot
+								.dot
+								.dot
+						.info_area
+							.info 
+								p 改為徵選獲獎
+								p 可斷行改為徵選獲
+								p 獎改為徵選獲獎改為徵選獲
+								p 獎改為徵選獲獎改為徵選獲獎改為徵
+								p 選獲獎改為徵選獲獎改為
+								p 徵選獲獎改為徵選獲
+								p 獎改為徵選獲獎
+							.info2
+								.course01 SDGs與全球公民素養
+								.course02 增廣/充實選修課程
+								.type 數學
+							a.download(href="" target="_blank") DOWNLOAD 
+					.school_box
+						figure
+							img(src="images/school.png", alt="")
+						.school 台北市立中山女子高級中學
+						.teacher 〇〇〇老師、〇〇老師、〇〇〇老師
+			section.editor
+				.inner
+					.info_select
+						h2 與十二年國教核心素養之關連性
+						.row
+							h3 A 自主行動
+							.s1 A1 身心素質與自我精進
+							.s2 A2 系統思考與問題解決
+							.s2 A3 規劃執行與創新應變
+						.row
+							h3 B 溝通互動
+							.s2 B1 符號運用與溝通表達
+							.s2 B2 科技資訊與媒體素養
+							.s1 B3 藝術涵養與美感素養
+						.row
+							h3 C 社會參與
+							.s1 C1 道德實踐與公民意識
+							.s2 C2 人際關係與團隊合作
+							.s1 C3 多元文化與國際理解
+					.editor_box
+						h1 H1標題文字H1標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+						h2 H2標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+						h3 H3標題文字
+						p 說明文字說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字。
+
+						.img_box01
+							img(src="images/ed_img01.png", alt="")
+							span 圖片說明文字圖片說明文字圖片說明文字
+						.img_box02
+							.img
+								img(src="images/ed_img02.png", alt="")
+								span 圖片說明文字圖片說明文字圖片說明文字
+							.img
+								img(src="images/ed_img02.png", alt="")
+								span 圖片說明文字圖片說明文字圖片說明文字
+						.yt_box
+							iframe(src="https://www.youtube.com/embed/h8rpdyGWz2Y" frameborder="0" allowfullscreen)
+							span 圖片說明文字圖片說明文字圖片說明文字
+					.float
+						a(href="") #關鍵字
+						a(href="") #關鍵字關鍵字
+						a(href="") #關鍵關鍵字
+						a(href="") #關鍵字字
+						a(href="") #關鍵字關鍵
+						a(href="") #關鍵字 
+					.page_box
+						a.prev(href="course.html") 上一則
+						a(href="course_list.html") 回高優課程
+						a.next(href="course.html") 下一則
+			section.site
+				.inner
+					h2 相關課程
+					.item_box
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="site.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+		include footer.pug
+					
+		script(src="js/course.js" type="text/javascript")

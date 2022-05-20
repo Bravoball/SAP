@@ -1,0 +1,129 @@
+doctype html
+html
+	head
+		include head.pug
+		
+		//- css
+		link(rel="stylesheet" href="css/lecture_list.css")
+
+		//- JS
+
+	body
+		include header.pug
+		
+		article
+			section.kv
+				.m_title 高優講堂
+				.kv_img(style="background-image: url(images/lecture_kv.png)")
+				.main
+					.inner
+						h1 高優講堂
+						p 「航向藍海」透過手中的課程藏寶圖，引領著大家以實體與影片的方式體驗各高中所發展出多元豐富的優質課程，讓大家瞭解新課綱各高中所發展出的課程新風貌。
+			section.slide
+				.inner
+					.bread
+						a(href="index.html") 首頁 
+						span ｜教育話題
+					.slide_box
+						.slide_area
+							.item_box
+								a.item.active(href="" target="_blank")
+									img(src="images/slide_img.png", alt="")
+								a.item(href="" target="_blank")
+									img(src="images/slide_img.png", alt="")
+								a.item(href="" target="_blank")
+									img(src="images/slide_img.png", alt="")
+								a.item(href="" target="_blank")
+									img(src="images/slide_img.png", alt="")
+							.dot_box
+								.dot.active
+								.dot
+								.dot
+								.dot
+						span 圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字圖片/影片說明文字
+			section.list
+				.inner
+					.top2
+						a(href="lecture.html")
+							figure
+								img(src="images/lecture_img.png", alt="")
+							.info
+								.row
+									.date 2022.12.22
+									.place 台北市
+								h3 面向未來學習的學校設計
+								.teacher
+									.cate 專題講座
+									span 林國楨教授
+								p.school 臺北市陽明高中、桃園市壽山高中、臺中淸水高中高雄市高雄女中、國立花蓮高中代表
+								p.detail 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高察覺生活材質的差異，本單元為讓學生提高察覺生活材質的差異，本單元為讓學生提高察覺本...
+						a(href="lecture.html")
+							figure
+								img(src="images/lecture_img.png", alt="")
+							.info
+								.row
+									.date 2022.12.22
+									.place 台北市
+								h3 面向未來學習的學校設計
+								.teacher
+									.cate 專題講座
+									span 林國楨教授
+								p.school 臺北市陽明高中、桃園市壽山高中、臺中淸水高中高雄市高雄女中、國立花蓮高中代表
+								p.detail 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高察覺生活材質的差異，本單元為讓學生提高察覺生活材質的差異，本單元為讓學生提高察覺本...
+			section.list2
+				.inner
+					.tag
+						.search_box
+							input(type="text" placeholder="請輸入關鍵字")
+							a.search(href="") 搜尋
+						.info
+							p 標籤：＃關鍵字 或 搜尋結果：關鍵字
+							.total 共 12 則
+					.main
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+						a(href="lecture.html")
+							.cate 標籤標籤
+							.row
+								.date 2022.12.22
+								.place 台北市
+							h3 面向未來學習的學校設計
+					.page_box
+						a.prev(href="") 
+						a(href="") 1
+						a(href="") 2
+						span 3
+						a(href="") 4
+						a(href="") 5
+						a.next(href="") 
+		include footer.pug
+					
+		script(src="js/lecture_list.js" type="text/javascript")

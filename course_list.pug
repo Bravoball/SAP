@@ -1,0 +1,218 @@
+doctype html
+html
+	head
+		include head.pug
+		
+		//- css
+		link(rel="stylesheet" href="css/course_list.css")
+
+		//- JS
+
+	body
+		include header.pug
+		
+		article
+			section.kv
+				.m_title 高優課程
+				.kv_img(style="background-image: url(images/course_kv.png)")
+				.main
+					.inner
+						h1 高優課程
+						p 「航向藍海」透過手中的課程藏寶圖，引領著大家以實體與影片的方式體驗各高中所發展出多元豐富的優質課程，讓大家瞭解新課綱各高中所發展出的課程新風貌。
+			section.tool
+				.inner
+					.bread
+						a(href="index.html") 首頁 
+						span ｜ 高優課程
+					.tag
+						form.search_box
+							.select_box
+								select
+									option(value="" disabled selected) 分區
+									option(value="") 北一區
+									option(value="") 北二區
+									option(value="") 北三區
+									option(value="") 中區
+									option(value="") 南區
+							.select_box
+								select
+									option(value="" disabled selected) 探討議題
+									option(value="") 人權教育
+									option(value="") 媒體識讀/素養
+									option(value="") 數位學習
+									option(value="") SDGs與全球公民素養
+									option(value="") 自主學習
+									option(value="") 地方學
+									option(value="") 新興科技
+									option(value="") 戶外教育
+									option(value="") 其他
+							.select_box
+								select
+									option(value="" disabled selected) 領域別
+									option(value="") 語文
+									option(value="") 數學
+									option(value="") 社會
+									option(value="") 自然科學
+									option(value="") 藝術
+									option(value="") 科技
+									option(value="") 綜合活動
+									option(value="") 健康與體育
+									option(value="") 全民國防教育
+									option(value="") 跨領域
+							.select_box
+								select
+									option(value="" disabled selected) 課程類型
+									option(value="") 部定必修
+									option(value="") 校訂必修
+									option(value="") 多元選修
+									option(value="") 加深加廣選修
+									option(value="") 彈性學習時間
+									option(value="") 增廣/充實選修課程
+									option(value="") 補強性選修
+									option(value="") 其他
+							input(type="text" placeholder="請輸入關鍵字")
+							a.search(href="") 搜尋
+							a.reset(href="javascript:void(0)") 清空
+						.info
+							p 標籤：＃關鍵字 或 搜尋結果：關鍵字
+							.total 共 12 則
+			section.list
+				.inner
+					.item_box
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								.medal
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+						a(href="course.html")
+							figure
+								img(src="images/site_img01.png", alt="")
+							.info
+								h4.hat 國立台灣師範大學附屬高級中學
+								h3 面向未來學習的學校設計
+								p 我們生活在城市都會之中，生活周遭就藏匿著許多可以探究的美感要素，本單元為讓學生提高...
+								.cate SDGs與全球公民素養
+									|
+									span 增廣/充實選修課程
+					.page_box
+						a.prev(href="") 
+						a(href="") 1
+						a(href="") 2
+						span 3
+						a(href="") 4
+						a(href="") 5
+						a.next(href="") 
+		include footer.pug
+					
+		script(src="js/course_list.js" type="text/javascript")

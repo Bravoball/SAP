@@ -81,6 +81,9 @@ section.kv
                 font-size: 18px
                 line-height: 32px
                 letter-spacing: 1px
+                +rwd(750px)
+                    font-size: 16px
+                    line-height: 30px
 section.tool
     margin-bottom: 20px
     .inner
@@ -114,6 +117,8 @@ section.tool
                     width: 340px
                     margin: 0 auto
                     margin-bottom: 40px
+                +rwd(374px)
+                    width: 100%
                 a.btn01
                     +rwd(1200px)
                         padding: 8px 20px
@@ -121,6 +126,8 @@ section.tool
                         padding: 8px 50px
                         &:nth-child(2n)
                             margin-right: 0
+                    +rwd(374px)
+                        padding: 8px 35px
                             
             .search_box
                 float: right
@@ -129,6 +136,8 @@ section.tool
                     width: 340px
                     margin: 0 auto
                     margin-bottom: 20px
+                +rwd(374px)
+                    width: 100%
                 input
                     +rwd(750px)
                         width: calc(100% - 90px)
@@ -150,8 +159,11 @@ section.tool
                     float: none
                     width: 340px
                     margin: 0 auto
+                +rwd(374px)
+                    width: 100%
                 p
                     float: left
+                    width: calc(100% - 80px)
                 .total
                     float: right
 section.list
@@ -196,6 +208,8 @@ section.list
                     +rwd(750px)
                         width: 100%
                         height: auto
+                        border-radius: 5px
+                        overflow: hidden
                 .info
                     position: absolute
                     left: 0
@@ -229,7 +243,7 @@ section.list
                             background-repeat: no-repeat
                             padding-left: 30px
                     h3
-                        font-size: 24px
+                        font-size: 20px
                         font-weight: 500
                         line-height: 34px
                         +rwd(750px)

@@ -10,7 +10,7 @@ section.kv {
   section.kv .video {
     width: 100%;
     height: 100%;
-    background-color: #000; }
+    background-color: #fff; }
     @media only screen and (max-width: 750px) {
       section.kv .video {
         display: none; } }
@@ -290,6 +290,10 @@ section.site {
           @media only screen and (max-width: 1200px) {
             section.site .inner .main .item_box [class^="item"] a figure {
               height: 230px; } }
+          @media only screen and (max-width: 750px) {
+            section.site .inner .main .item_box [class^="item"] a figure {
+              border-radius: 5px;
+              overflow: hidden; } }
         section.site .inner .main .item_box [class^="item"] a .info {
           position: absolute;
           left: 0;
@@ -303,7 +307,8 @@ section.site {
             section.site .inner .main .item_box [class^="item"] a .info {
               position: relative;
               background-color: #fff;
-              padding: 20px 0; } }
+              padding: 20px 0;
+              min-height: 265px; } }
           section.site .inner .main .item_box [class^="item"] a .info:after {
             content: "";
             position: absolute;
@@ -328,7 +333,7 @@ section.site {
               background-repeat: no-repeat;
               padding-left: 30px; }
           section.site .inner .main .item_box [class^="item"] a .info h3 {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 500;
             line-height: 34px; }
             @media only screen and (max-width: 750px) {
@@ -466,6 +471,9 @@ section.lecture {
             width: 336px;
             height: auto;
             background-color: #fff; } }
+        @media only screen and (max-width: 374px) {
+          section.lecture .inner .top2 a {
+            width: 100%; } }
         @media only screen and (min-width: 751px) {
           section.lecture .inner .top2 a:hover .info:after {
             opacity: 1; }
@@ -480,7 +488,9 @@ section.lecture {
           @media only screen and (max-width: 750px) {
             section.lecture .inner .top2 a figure {
               display: block;
-              width: 100%; } }
+              width: 100%;
+              border-radius: 5px;
+              overflow: hidden; } }
         section.lecture .inner .top2 a .info {
           display: inline-block;
           vertical-align: top;
@@ -489,7 +499,7 @@ section.lecture {
           padding: 20px 10px;
           width: calc(100% - 210px);
           height: 100%;
-          margin-left: -4px;
+          margin-left: -5px;
           position: relative; }
           @media only screen and (max-width: 750px) {
             section.lecture .inner .top2 a .info {
@@ -524,7 +534,7 @@ section.lecture {
               background-repeat: no-repeat;
               padding-left: 25px; }
           section.lecture .inner .top2 a .info h3 {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 500;
             line-height: 24px;
             margin-bottom: 15px; }
@@ -550,105 +560,116 @@ section.lecture {
             @media only screen and (max-width: 750px) {
               section.lecture .inner .top2 a .info .detail {
                 display: none; } }
-    @media only screen and (max-width: 750px) {
-      section.lecture .inner .list {
-        width: 336px;
-        margin: 0 auto; } }
-    section.lecture .inner .list .slick-list {
-      overflow: hidden;
-      margin-bottom: 40px; }
-    section.lecture .inner .list .slick-dots {
-      text-align: center; }
-      section.lecture .inner .list .slick-dots li {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 5px; }
-        section.lecture .inner .list .slick-dots li button {
-          border: none;
-          text-indent: -9999px;
-          background-color: transparent;
-          width: 10px;
-          height: 10px;
-          cursor: pointer;
-          border-radius: 20px;
-          background-color: rgba(0, 0, 0, 0.1); }
-        section.lecture .inner .list .slick-dots li.slick-active button {
-          background-color: rgba(0, 0, 0, 0.8); }
-    section.lecture .inner .list .item {
-      display: inline-block;
-      vertical-align: top; }
+    section.lecture .inner .list {
+      position: relative; }
       @media only screen and (max-width: 750px) {
-        section.lecture .inner .list .item {
+        section.lecture .inner .list {
           width: 336px;
-          margin-right: 20px; } }
-      section.lecture .inner .list .item a {
-        display: inline-block;
-        vertical-align: top;
-        background-color: #f6f6f6;
-        width: 336px;
-        margin-right: 36px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 20px;
-        position: relative;
-        border-radius: 5px;
-        overflow: hidden; }
-        @media only screen and (max-width: 1200px) {
-          section.lecture .inner .list .item a {
-            margin-right: 20px;
-            width: 230px;
-            padding: 20px 10px; } }
-        @media only screen and (max-width: 750px) {
-          section.lecture .inner .list .item a {
-            width: 336px;
-            margin-right: 0;
-            margin-bottom: 15px;
-            padding: 20px; } }
-        section.lecture .inner .list .item a:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 4px;
-          background-color: #58B9D8;
-          opacity: 0;
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s; }
-        @media only screen and (min-width: 751px) {
-          section.lecture .inner .list .item a:hover:after {
-            opacity: 1; } }
-        section.lecture .inner .list .item a .cate {
+          margin: 0 auto; } }
+      @media only screen and (max-width: 374px) {
+        section.lecture .inner .list {
+          width: 100%; } }
+      section.lecture .inner .list .slick-list {
+        overflow: hidden;
+        margin-bottom: 40px; }
+      section.lecture .inner .list .slick-dots {
+        text-align: center; }
+        section.lecture .inner .list .slick-dots li {
           display: inline-block;
           vertical-align: top;
-          color: #fff;
-          padding: 2px 8px;
-          background-color: #58B9D8;
-          font-weight: 300;
-          margin-right: 8px;
-          margin-bottom: 15px; }
-        section.lecture .inner .list .item a .row {
-          opacity: 0.4;
-          margin-bottom: 20px; }
-          section.lecture .inner .list .item a .row .date {
+          margin: 0 5px; }
+          section.lecture .inner .list .slick-dots li button {
+            border: none;
+            text-indent: -9999px;
+            background-color: transparent;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.1); }
+          section.lecture .inner .list .slick-dots li.slick-active button {
+            background-color: rgba(0, 0, 0, 0.8); }
+      section.lecture .inner .list .item {
+        display: inline-block;
+        vertical-align: top; }
+        @media only screen and (max-width: 750px) {
+          section.lecture .inner .list .item {
+            width: 336px;
+            margin-right: 20px; } }
+        @media only screen and (max-width: 374px) {
+          section.lecture .inner .list .item {
+            width: 280px; } }
+        section.lecture .inner .list .item a {
+          display: inline-block;
+          vertical-align: top;
+          background-color: #f6f6f6;
+          width: 336px;
+          margin-right: 36px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 20px;
+          position: relative;
+          border-radius: 5px;
+          overflow: hidden; }
+          @media only screen and (max-width: 1200px) {
+            section.lecture .inner .list .item a {
+              margin-right: 20px;
+              width: 230px;
+              padding: 20px 10px; } }
+          @media only screen and (max-width: 750px) {
+            section.lecture .inner .list .item a {
+              width: 336px;
+              margin-right: 0;
+              margin-bottom: 15px;
+              padding: 20px; } }
+          @media only screen and (max-width: 374px) {
+            section.lecture .inner .list .item a {
+              width: 100%; } }
+          section.lecture .inner .list .item a:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #58B9D8;
+            opacity: 0;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+          @media only screen and (min-width: 751px) {
+            section.lecture .inner .list .item a:hover:after {
+              opacity: 1; } }
+          section.lecture .inner .list .item a .cate {
             display: inline-block;
             vertical-align: top;
-            background-image: url(../images/icon02.svg);
-            background-repeat: no-repeat;
-            padding-left: 25px;
-            margin-right: 20px; }
-          section.lecture .inner .list .item a .row .place {
-            display: inline-block;
-            vertical-align: top;
-            background-image: url(../images/icon03.svg);
-            background-repeat: no-repeat;
-            padding-left: 25px; }
-        section.lecture .inner .list .item a h3 {
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 24px; }
+            color: #fff;
+            padding: 2px 8px;
+            background-color: #58B9D8;
+            font-weight: 300;
+            margin-right: 8px;
+            margin-bottom: 15px; }
+          section.lecture .inner .list .item a .row {
+            opacity: 0.4;
+            margin-bottom: 20px; }
+            section.lecture .inner .list .item a .row .date {
+              display: inline-block;
+              vertical-align: top;
+              background-image: url(../images/icon02.svg);
+              background-repeat: no-repeat;
+              padding-left: 25px;
+              margin-right: 20px; }
+            section.lecture .inner .list .item a .row .place {
+              display: inline-block;
+              vertical-align: top;
+              background-image: url(../images/icon03.svg);
+              background-repeat: no-repeat;
+              padding-left: 25px; }
+          section.lecture .inner .list .item a h3 {
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 24px; }
 
 section.course {
   padding: 80px 0 60px; }
@@ -771,6 +792,9 @@ section.course {
             margin-right: 0; }
           section.course .inner .main .list a:nth-child(2n) {
             margin-right: 0; } }
+      @media only screen and (max-width: 374px) {
+        section.course .inner .main .list a {
+          width: 100%; } }
       @media only screen and (min-width: 751px) {
         section.course .inner .main .list a:hover .info:after {
           opacity: 1; }
@@ -779,6 +803,10 @@ section.course {
       section.course .inner .main .list a figure {
         width: 100%;
         height: 100%; }
+        @media only screen and (max-width: 750px) {
+          section.course .inner .main .list a figure {
+            border-radius: 5px;
+            overflow: hidden; } }
       section.course .inner .main .list a .info {
         position: absolute;
         left: 0;
@@ -820,7 +848,7 @@ section.course {
             background-repeat: no-repeat;
             padding-left: 30px; }
         section.course .inner .main .list a .info h3 {
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 500;
           line-height: 34px; }
         section.course .inner .main .list a .info p {

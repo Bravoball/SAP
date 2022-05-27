@@ -94,6 +94,10 @@ section.kv {
         font-size: 18px;
         line-height: 32px;
         letter-spacing: 1px; }
+        @media only screen and (max-width: 750px) {
+          section.kv .main .inner p {
+            font-size: 16px;
+            line-height: 30px; } }
 
 section.tool {
   margin-bottom: 20px; }
@@ -147,6 +151,9 @@ section.tool {
           width: 340px;
           margin: 0 auto;
           margin-bottom: 20px; } }
+      @media only screen and (max-width: 374px) {
+        section.tool .inner .tag .search_box {
+          width: 100%; } }
       @media only screen and (max-width: 1200px) {
         section.tool .inner .tag .search_box input {
           width: 110px; } }
@@ -182,8 +189,12 @@ section.tool {
           float: none;
           width: 340px;
           margin: 0 auto; } }
+      @media only screen and (max-width: 374px) {
+        section.tool .inner .tag .info {
+          width: 100%; } }
       section.tool .inner .tag .info p {
-        float: left; }
+        float: left;
+        width: calc(100% - 80px); }
       section.tool .inner .tag .info .total {
         float: right; }
 
@@ -235,7 +246,9 @@ section.list .inner {
             height: 230px; } }
         @media only screen and (max-width: 750px) {
           section.list .inner .item_box a figure {
-            height: auto; } }
+            height: auto;
+            border-radius: 5px;
+            overflow: hidden; } }
       section.list .inner .item_box a .info {
         position: absolute;
         left: 0;
@@ -281,7 +294,7 @@ section.list .inner {
             background-repeat: no-repeat;
             padding-left: 30px; }
         section.list .inner .item_box a .info h3 {
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 500;
           line-height: 34px; }
           @media only screen and (max-width: 750px) {

@@ -21,37 +21,87 @@ section.slide {
       section.slide .inner .bread span {
         font-weight: 500;
         letter-spacing: 0.2em; }
-    section.slide .inner .tag {
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-      border-bottom: 2px solid #e5e5e5; }
-      @media only screen and (max-width: 750px) {
-        section.slide .inner .tag {
-          width: 100%;
-          margin: 0 auto;
-          padding-bottom: 30px;
-          margin-bottom: 40px; } }
     section.slide .inner .slide_box {
       margin-bottom: 40px; }
-      section.slide .inner .slide_box h2 {
-        font-size: 30px;
-        line-height: 44px;
-        font-weight: 500;
-        margin-bottom: 20px; }
+      section.slide .inner .slide_box .tag {
+        margin-bottom: 40px; }
         @media only screen and (max-width: 750px) {
-          section.slide .inner .slide_box h2 {
-            font-size: 24px;
-            line-height: 34px;
+          section.slide .inner .slide_box .tag {
+            width: 100%;
+            margin: 0 auto;
             margin-bottom: 40px; } }
-      section.slide .inner .slide_box > p {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 40px 60px;
-        background-color: #f6f6f6;
-        margin-bottom: 20px; }
-        @media only screen and (max-width: 750px) {
-          section.slide .inner .slide_box > p {
-            padding: 20px; } }
+        section.slide .inner .slide_box .tag::after {
+          content: "";
+          display: block;
+          clear: both; }
+        section.slide .inner .slide_box .tag .tag_box {
+          float: left; }
+          @media only screen and (max-width: 750px) {
+            section.slide .inner .slide_box .tag .tag_box {
+              float: none;
+              width: 340px;
+              margin: 0 auto;
+              margin-bottom: 40px; } }
+          @media only screen and (max-width: 1200px) {
+            section.slide .inner .slide_box .tag .tag_box a.btn01 {
+              padding: 8px 20px; } }
+          @media only screen and (max-width: 750px) {
+            section.slide .inner .slide_box .tag .tag_box a.btn01 {
+              padding: 8px 50px; }
+              section.slide .inner .slide_box .tag .tag_box a.btn01:nth-child(2n) {
+                margin-right: 0; } }
+        section.slide .inner .slide_box .tag .search_box {
+          float: left; }
+          @media only screen and (max-width: 750px) {
+            section.slide .inner .slide_box .tag .search_box {
+              float: none;
+              width: 340px;
+              margin: 0 auto;
+              margin-bottom: 20px; } }
+          @media only screen and (max-width: 374px) {
+            section.slide .inner .slide_box .tag .search_box {
+              width: 100%; } }
+          section.slide .inner .slide_box .tag .search_box .select_box.school {
+            width: 230px; }
+            @media only screen and (max-width: 750px) {
+              section.slide .inner .slide_box .tag .search_box .select_box.school {
+                width: 100%; } }
+          @media only screen and (max-width: 750px) {
+            section.slide .inner .slide_box .tag .search_box input {
+              width: 100%;
+              margin-bottom: 20px; } }
+          section.slide .inner .slide_box .tag .search_box .search, section.slide .inner .slide_box .tag .search_box .reset {
+            display: inline-block;
+            vertical-align: top;
+            font-weight: bold;
+            padding: 8px 24px;
+            border-radius: 2px;
+            margin-right: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #FFF;
+            background-color: rgba(0, 0, 0, 0.8); }
+            @media only screen and (max-width: 750px) {
+              section.slide .inner .slide_box .tag .search_box .search, section.slide .inner .slide_box .tag .search_box .reset {
+                width: calc(50% - 5px);
+                text-align: center; } }
+          section.slide .inner .slide_box .tag .search_box .reset {
+            margin-right: 0; }
+        section.slide .inner .slide_box .tag .info {
+          float: left;
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+          opacity: 0.6; }
+          @media only screen and (max-width: 750px) {
+            section.slide .inner .slide_box .tag .info {
+              float: none;
+              width: 340px;
+              margin: 0 auto; } }
+          section.slide .inner .slide_box .tag .info p {
+            float: left; }
+          section.slide .inner .slide_box .tag .info .total {
+            float: right; }
       section.slide .inner .slide_box::after {
         content: "";
         display: block;
@@ -71,11 +121,10 @@ section.slide {
             height: auto;
             background-color: #FFF;
             float: none;
-            padding: 40px 0; } }
+            padding: 0px 0 40px; } }
         @media only screen and (max-width: 950px) {
           section.slide .inner .slide_box .info_area {
-            width: 100%;
-            padding: 0 0 40px; } }
+            width: 100%; } }
         section.slide .inner .slide_box .info_area figure {
           width: 80px;
           margin-bottom: 20px; }
@@ -230,7 +279,7 @@ section.editor {
         section.editor .inner .editor_box {
           width: 100%; } }
       section.editor .inner .editor_box h1 {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 34px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -238,7 +287,7 @@ section.editor {
           section.editor .inner .editor_box h1 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box h2 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 28px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -246,7 +295,7 @@ section.editor {
           section.editor .inner .editor_box h2 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box h3 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -254,10 +303,11 @@ section.editor {
           section.editor .inner .editor_box h3 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box p {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 15px;
+        line-height: 30px;
         font-weight: 400;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        color: #1a1a1a; }
         @media only screen and (max-width: 750px) {
           section.editor .inner .editor_box p {
             margin-bottom: 60px; } }
@@ -288,11 +338,14 @@ section.editor {
           display: inline-block;
           vertical-align: top;
           max-width: 346px;
-          width: calc(50% - 19px);
+          width: calc(50% - 20px);
           margin-right: 34px;
           border-radius: 5px;
           overflow: hidden;
           line-height: 0px; }
+          @media only screen and (max-width: 950px) {
+            section.editor .inner .editor_box .img_box02 .img {
+              max-width: initial; } }
           @media only screen and (max-width: 750px) {
             section.editor .inner .editor_box .img_box02 .img {
               width: 100%;
@@ -485,6 +538,10 @@ section.site {
         @media only screen and (max-width: 1200px) {
           section.site .inner .item_box a figure {
             height: 230px; } }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .item_box a figure {
+            border-radius: 5px;
+            overflow: hidden; } }
       section.site .inner .item_box a .info {
         position: absolute;
         left: 0;
@@ -523,7 +580,7 @@ section.site {
             background-repeat: no-repeat;
             padding-left: 30px; }
         section.site .inner .item_box a .info h3 {
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 500;
           line-height: 34px; }
           @media only screen and (max-width: 750px) {

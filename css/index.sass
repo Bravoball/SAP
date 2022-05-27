@@ -11,7 +11,7 @@ section.kv
     .video
         width: 100%
         height: 100%
-        background-color: #000
+        background-color: #fff
         +rwd(750px)
             display: none
         .vsc-controller
@@ -269,6 +269,9 @@ section.site
                             height: 100%
                             +rwd(1200px)
                                 height: 230px
+                            +rwd(750px)
+                                border-radius: 5px
+                                overflow: hidden
                         .info
                             position: absolute
                             left: 0
@@ -281,6 +284,7 @@ section.site
                                 position: relative
                                 background-color: #fff
                                 padding: 20px 0
+                                min-height: 265px
                             &:after
                                 content: ""
                                 position: absolute
@@ -302,7 +306,7 @@ section.site
                                     background-repeat: no-repeat
                                     padding-left: 30px
                             h3
-                                font-size: 24px
+                                font-size: 20px
                                 font-weight: 500
                                 line-height: 34px
                                 +rwd(750px)
@@ -425,6 +429,8 @@ section.lecture
                     width: 336px
                     height: auto
                     background-color: #fff
+                +rwd(374px)
+                    width: 100%
                 +rwd2()
                     &:hover
                         .info
@@ -441,6 +447,8 @@ section.lecture
                     +rwd(750px)
                         display: block
                         width: 100%
+                        border-radius: 5px
+                        overflow: hidden
                 .info
                     display: inline-block
                     vertical-align: top
@@ -448,7 +456,7 @@ section.lecture
                     padding: 20px 10px
                     width: calc(100% - 210px)
                     height: 100%
-                    margin-left: -4px
+                    margin-left: -5px
                     position: relative
                     +rwd(750px)
                         width: 100%
@@ -480,7 +488,7 @@ section.lecture
                             background-repeat: no-repeat
                             padding-left: 25px
                     h3
-                        font-size: 24px
+                        font-size: 20px
                         font-weight: 500
                         line-height: 24px
                         margin-bottom: 15px
@@ -506,9 +514,12 @@ section.lecture
                         +rwd(750px)
                             display: none
         .list
+            position: relative
             +rwd(750px)
                 width: 336px
                 margin: 0 auto
+            +rwd(374px)
+                width: 100%
             .slick-list
                 overflow: hidden
                 margin-bottom: 40px
@@ -535,6 +546,8 @@ section.lecture
                 +rwd(750px)
                     width: 336px
                     margin-right: 20px
+                +rwd(374px)
+                    width: 280px
                 a
                     display: inline-block
                     vertical-align: top
@@ -555,6 +568,8 @@ section.lecture
                         margin-right: 0
                         margin-bottom: 15px
                         padding: 20px
+                    +rwd(374px)
+                        width: 100%
                     &:after
                         content: ""
                         position: absolute
@@ -596,7 +611,7 @@ section.lecture
                             background-repeat: no-repeat
                             padding-left: 25px
                     h3
-                        font-size: 24px
+                        font-size: 19px
                         font-weight: 500
                         line-height: 24px
 
@@ -710,6 +725,8 @@ section.course
                             margin-right: 0
                         &:nth-child(2n)
                             margin-right: 0
+                    +rwd(374px)
+                        width: 100%
                     +rwd2()
                         &:hover
                             .info
@@ -720,6 +737,9 @@ section.course
                     figure
                         width: 100%
                         height: 100%
+                        +rwd(750px)
+                            border-radius: 5px
+                            overflow: hidden
                     .info
                         position: absolute
                         left: 0
@@ -757,7 +777,7 @@ section.course
                                 background-repeat: no-repeat
                                 padding-left: 30px
                         h3
-                            font-size: 24px
+                            font-size: 20px
                             font-weight: 500
                             line-height: 34px
                         p

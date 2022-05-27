@@ -16,10 +16,31 @@ html
 				.inner
 					.bread
 						a(href="index.html") 首頁 
-						span ｜高優課程
+						span ｜ 高優學校
 					.slide_box
-						h2 講堂名稱
-						p 說明文字說明文字說明文字說明文字，說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說，明文字說明文字說明文字說，明文字說明文字說。明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文，字說明文字說明文字說明文字。
+						.tag
+							form.search_box
+								.select_box
+									select
+										option(value="" disabled selected) 分區
+										option(value="") 北一區
+										option(value="") 北二區
+										option(value="") 北三區
+										option(value="") 中區
+										option(value="") 南區
+								.select_box.school
+									select
+										option(value="" disabled selected) 學校類型
+										option(value="") 普通型高級中等學校(普高)
+										option(value="") 技術型高級中等學校(技高)
+										option(value="") 綜合型高級中等學校(綜高)
+										option(value="") 單科型高級中等學校(單科高中)
+								input(type="text" placeholder="請輸入關鍵字")
+								a.search(href="") 搜尋
+								a.reset(href="javascript:void(0)") 清空
+							//- .info
+							//- 	p 標籤：＃關鍵字 或 搜尋結果：關鍵字
+							//- 	.total 共 12 則
 						.info_area
 							figure
 								img(src="images/school.png", alt="")

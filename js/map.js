@@ -21,7 +21,7 @@ function ZoomControl(controlDiv, map) {
     zoomInButton.style.width = '32px'; 
     zoomInButton.style.height = '32px';
     /* Change this to be the .png image you want to use */
-    zoomInButton.style.backgroundImage = 'url("../images/zoomin.png")';
+    zoomInButton.style.backgroundImage = 'url("images/zoomin.png")';
     controlWrapper.appendChild(zoomInButton);
       
     // Set CSS for the zoomOut
@@ -29,7 +29,7 @@ function ZoomControl(controlDiv, map) {
     zoomOutButton.style.width = '32px'; 
     zoomOutButton.style.height = '32px';
     /* Change this to be the .png image you want to use */
-    zoomOutButton.style.backgroundImage = 'url("../images/zoomout.png")';
+    zoomOutButton.style.backgroundImage = 'url("images/zoomout.png")';
     controlWrapper.appendChild(zoomOutButton);
   
     // Setup the click event listener - zoomIn

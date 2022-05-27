@@ -81,6 +81,9 @@ section.kv
                 font-size: 18px
                 line-height: 32px
                 letter-spacing: 1px
+                +rwd(750px)
+                    font-size: 16px
+                    line-height: 30px
 section.tool
     margin-bottom: 20px
     .inner
@@ -129,6 +132,8 @@ section.tool
                     width: 340px
                     margin: 0 auto
                     margin-bottom: 20px
+                +rwd(374px)
+                    width: 100%
                 select
                 input
                     +rwd(1200px)
@@ -161,8 +166,11 @@ section.tool
                     float: none
                     width: 340px
                     margin: 0 auto
+                +rwd(374px)
+                    width: 100%
                 p
                     float: left
+                    width: calc(100% - 80px)
                 .total
                     float: right
 section.list
@@ -215,6 +223,8 @@ section.list
                         height: 230px
                     +rwd(750px)
                         height: auto
+                        border-radius: 5px
+                        overflow: hidden
                 .info
                     position: absolute
                     left: 0
@@ -255,7 +265,7 @@ section.list
                             background-repeat: no-repeat
                             padding-left: 30px
                     h3
-                        font-size: 24px
+                        font-size: 20px
                         font-weight: 500
                         line-height: 34px
                         +rwd(750px)

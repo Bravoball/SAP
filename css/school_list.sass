@@ -81,6 +81,9 @@ section.kv
                 font-size: 18px
                 line-height: 32px
                 letter-spacing: 1px
+                +rwd(750px)
+                    font-size: 16px
+                    line-height: 30px
 section.tool
     margin-bottom: 20px
     .inner
@@ -129,6 +132,8 @@ section.tool
                     width: 340px
                     margin: 0 auto
                     margin-bottom: 20px
+                +rwd(374px)
+                    width: 100%
                 .select_box
                     &.school
                         width: 270px
@@ -164,8 +169,11 @@ section.tool
                     float: none
                     width: 340px
                     margin: 0 auto
+                +rwd(374px)
+                    width: 100%
                 p
                     float: left
+                    width: calc(100% - 80px)
                 .total
                     float: right
 section.list

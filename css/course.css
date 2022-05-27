@@ -43,12 +43,12 @@ section.slide {
       section.slide .inner .slide_box > p {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 40px 60px;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 25px 30px;
         background-color: #f6f6f6;
+        color: #333;
         margin-bottom: 20px; }
-        @media only screen and (max-width: 750px) {
-          section.slide .inner .slide_box > p {
-            padding: 20px; } }
       section.slide .inner .slide_box::after {
         content: "";
         display: block;
@@ -89,7 +89,7 @@ section.slide {
               display: block; }
         section.slide .inner .slide_box .slide_area .dot_box {
           margin-right: 30px;
-          margin-top: -30px;
+          margin-top: -40px;
           text-align: right;
           position: relative;
           z-index: 5; }
@@ -136,12 +136,13 @@ section.slide {
             width: 100%;
             padding: 0 0 40px; } }
         section.slide .inner .slide_box .info_area .info {
-          max-height: 210px;
+          min-height: 220px;
           margin-bottom: 40px; }
           @media only screen and (max-width: 1200px) {
             section.slide .inner .slide_box .info_area .info {
               display: inline-block;
-              vertical-align: top; } }
+              vertical-align: top;
+              min-height: auto; } }
           @media only screen and (max-width: 950px) {
             section.slide .inner .slide_box .info_area .info {
               display: block; } }
@@ -267,7 +268,7 @@ section.editor {
         section.editor .inner .editor_box {
           width: 100%; } }
       section.editor .inner .editor_box h1 {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 34px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -275,7 +276,7 @@ section.editor {
           section.editor .inner .editor_box h1 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box h2 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 28px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -283,7 +284,7 @@ section.editor {
           section.editor .inner .editor_box h2 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box h3 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
         font-weight: 500;
         margin-bottom: 10px; }
@@ -291,10 +292,11 @@ section.editor {
           section.editor .inner .editor_box h3 {
             margin-bottom: 20px; } }
       section.editor .inner .editor_box p {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 15px;
+        line-height: 30px;
         font-weight: 400;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        color: #1a1a1a; }
         @media only screen and (max-width: 750px) {
           section.editor .inner .editor_box p {
             margin-bottom: 60px; } }
@@ -325,11 +327,14 @@ section.editor {
           display: inline-block;
           vertical-align: top;
           max-width: 346px;
-          width: calc(50% - 19px);
+          width: calc(50% - 20px);
           margin-right: 34px;
           border-radius: 5px;
           overflow: hidden;
           line-height: 0px; }
+          @media only screen and (max-width: 950px) {
+            section.editor .inner .editor_box .img_box02 .img {
+              max-width: initial; } }
           @media only screen and (max-width: 750px) {
             section.editor .inner .editor_box .img_box02 .img {
               width: 100%;
@@ -554,6 +559,10 @@ section.site {
         @media only screen and (max-width: 1200px) {
           section.site .inner .item_box a figure {
             height: 230px; } }
+        @media only screen and (max-width: 750px) {
+          section.site .inner .item_box a figure {
+            border-radius: 5px;
+            overflow: hidden; } }
       section.site .inner .item_box a .info {
         position: absolute;
         left: 0;
@@ -592,7 +601,7 @@ section.site {
             background-repeat: no-repeat;
             padding-left: 30px; }
         section.site .inner .item_box a .info h3 {
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 500;
           line-height: 34px; }
           @media only screen and (max-width: 750px) {

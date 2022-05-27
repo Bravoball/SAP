@@ -94,6 +94,10 @@ section.kv {
         font-size: 18px;
         line-height: 32px;
         letter-spacing: 1px; }
+        @media only screen and (max-width: 750px) {
+          section.kv .main .inner p {
+            font-size: 16px;
+            line-height: 30px; } }
 
 section.tool {
   margin-bottom: 20px; }
@@ -147,6 +151,9 @@ section.tool {
           width: 340px;
           margin: 0 auto;
           margin-bottom: 20px; } }
+      @media only screen and (max-width: 374px) {
+        section.tool .inner .tag .search_box {
+          width: 100%; } }
       section.tool .inner .tag .search_box .select_box.school {
         width: 270px; }
         @media only screen and (max-width: 750px) {
@@ -184,8 +191,12 @@ section.tool {
           float: none;
           width: 340px;
           margin: 0 auto; } }
+      @media only screen and (max-width: 374px) {
+        section.tool .inner .tag .info {
+          width: 100%; } }
       section.tool .inner .tag .info p {
-        float: left; }
+        float: left;
+        width: calc(100% - 80px); }
       section.tool .inner .tag .info .total {
         float: right; }
 

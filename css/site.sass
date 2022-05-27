@@ -40,11 +40,14 @@ section.slide
                     margin-bottom: 40px
             p
                 box-sizing: border-box
-                padding: 40px 60px
+                font-size: 15px
+                line-height: 30px
+                padding: 25px 30px
                 background-color: $grey
+                color: #333
                 margin-bottom: 20px
                 +rwd(750px)
-                    padding: 20px
+                    // padding: 20px
             .slide_area
                 width: 1080px
                 margin-bottom: 10px
@@ -262,31 +265,32 @@ section.editor
             +rwd(1200px)
                 width: 100%
             h1
-                font-size: 24px
+                font-size: 20px
                 line-height: 34px
                 font-weight: 500
                 margin-bottom: 10px
                 +rwd(750px)
                     margin-bottom: 20px
             h2
-                font-size: 20px
+                font-size: 18px
                 line-height: 28px
                 font-weight: 500
                 margin-bottom: 10px
                 +rwd(750px)
                     margin-bottom: 20px
             h3
-                font-size: 18px
+                font-size: 16px
                 line-height: 30px
                 font-weight: 500
                 margin-bottom: 10px
                 +rwd(750px)
                     margin-bottom: 20px
             p
-                font-size: 16px
-                line-height: 28px
+                font-size: 15px
+                line-height: 30px
                 font-weight: 400
                 margin-bottom: 40px
+                color: #1a1a1a
                 +rwd(750px)
                     margin-bottom: 60px
             span
@@ -314,11 +318,13 @@ section.editor
                     display: inline-block
                     vertical-align: top
                     max-width: 346px
-                    width: calc(50% - 19px)
+                    width: calc(50% - 20px)
                     margin-right: 34px
                     border-radius: 5px
                     overflow: hidden
                     line-height: 0px
+                    +rwd(950px)
+                        max-width: initial
                     +rwd(750px)
                         width: 100%
                         max-width: initial
@@ -370,6 +376,8 @@ section.editor
             padding-bottom: 0
             a
                 padding: 4px 24px
+                +rwd(750px)
+                    padding: 4px 20px
                 &.prev, &.next
                     padding: 4px 0 4px 40px
                     position: relative
@@ -522,6 +530,9 @@ section.site
                     height: 100%
                     +rwd(1200px)
                         height: 230px
+                    +rwd(750px)
+                        border-radius: 5px
+                        overflow: hidden
                 .info
                     position: absolute
                     left: 0
@@ -555,7 +566,7 @@ section.site
                             background-repeat: no-repeat
                             padding-left: 30px
                     h3
-                        font-size: 24px
+                        font-size: 20px
                         font-weight: 500
                         line-height: 34px
                         +rwd(750px)

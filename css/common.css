@@ -452,6 +452,9 @@ footer {
             margin-left: 0;
             display: block; } }
 
+body.en * {
+  letter-spacing: 0px !important; }
+
 @media only screen and (max-width: 1200px) {
   body.en header .ham {
     top: 80px;

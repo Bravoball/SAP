@@ -858,3 +858,6 @@ section.course {
           color: #58B9D8; }
           section.course .inner .main .list a .info .cate span {
             opacity: 0.4; }
+
+body.en section.site .inner .main .tag .btn01 {
+  margin-bottom: 10px; }

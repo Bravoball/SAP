@@ -529,8 +529,9 @@ body.en footer .inner .f_logo {
   margin-right: 40px; }
   @media only screen and (max-width: 750px) {
     body.en footer .inner .f_logo {
-      margin-bottom: 80px;
-      margin-right: 0; } }
+      margin-right: 0;
+      margin: 0 auto;
+      margin-bottom: 80px; } }
   body.en footer .inner .f_logo img {
     width: 100%; }
 

@@ -441,7 +441,10 @@ body.en
 	header
 		.ham
 			+rwd(1200px)
+				top: 80px
 				display: block
+			+rwd(950px)
+				top: 60px
 		nav
 			+rwd(1200px)
 				background-color: $grey
@@ -468,7 +471,7 @@ body.en
 						margin-bottom: 10px
 					span, &>a
 						+rwd(1200px)
-							padding: 5px 10px 5px 40px
+							padding: 5px 0px 5px 40px
 							display: block
 					.sub
 						width: 360px
@@ -487,6 +490,12 @@ body.en
 								line-height: 28px
 								margin-left: 18px
 								padding: 5px 24px
+			.lang
+				+rwd(1200px)
+					display: block
+					margin-top: 0
+					margin-left: 32px
+					padding-bottom: 60px
 	footer
 		.inner
 			.f_logo

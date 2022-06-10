@@ -454,7 +454,12 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   body.en header .ham {
+    top: 80px;
     display: block; } }
+
+@media only screen and (max-width: 950px) {
+  body.en header .ham {
+    top: 60px; } }
 
 @media only screen and (max-width: 1200px) {
   body.en header nav {
@@ -488,7 +493,7 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   body.en header nav ul li span, body.en header nav ul li > a {
-    padding: 5px 10px 5px 40px;
+    padding: 5px 0px 5px 40px;
     display: block; } }
 
 body.en header nav ul li .sub {
@@ -510,6 +515,13 @@ body.en header nav ul li .sub {
       line-height: 28px;
       margin-left: 18px;
       padding: 5px 24px; } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header nav .lang {
+    display: block;
+    margin-top: 0;
+    margin-left: 32px;
+    padding-bottom: 60px; } }
 
 body.en footer .inner .f_logo {
   width: 220px;

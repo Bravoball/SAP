@@ -451,3 +451,89 @@ footer {
           footer .inner .copyright span {
             margin-left: 0;
             display: block; } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header .ham {
+    display: block; } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header nav {
+    background-color: #f6f6f6;
+    width: 250px;
+    height: 100vh;
+    padding-top: 70px;
+    margin-top: 0;
+    margin-right: 0;
+    display: none;
+    position: fixed;
+    right: 0;
+    -webkit-box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1); } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header nav ul {
+    display: block;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 1400px) {
+  body.en header nav ul li {
+    padding: 8px 10px 30px; } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header nav ul li {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 10px; } }
+
+@media only screen and (max-width: 1200px) {
+  body.en header nav ul li span, body.en header nav ul li > a {
+    padding: 5px 10px 5px 40px;
+    display: block; } }
+
+body.en header nav ul li .sub {
+  width: 360px;
+  margin-left: -180px; }
+  @media only screen and (max-width: 1200px) {
+    body.en header nav ul li .sub {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: initial;
+      margin-left: 0;
+      -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0) inset;
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0) inset; } }
+  @media only screen and (max-width: 1200px) {
+    body.en header nav ul li .sub a {
+      opacity: 0.68;
+      font-size: 14px;
+      line-height: 28px;
+      margin-left: 18px;
+      padding: 5px 24px; } }
+
+body.en footer .inner .f_logo {
+  width: 220px;
+  margin-right: 40px; }
+  body.en footer .inner .f_logo img {
+    width: 100%; }
+
+body.en footer .inner .main {
+  width: 410px;
+  margin-right: 10px; }
+  @media only screen and (max-width: 750px) {
+    body.en footer .inner .main {
+      width: 270px; } }
+  body.en footer .inner .main .row p {
+    font-size: 14px; }
+  body.en footer .inner .main .row.links {
+    text-align: left; }
+    @media only screen and (max-width: 750px) {
+      body.en footer .inner .main .row.links a {
+        margin-bottom: 10px; } }
+
+@media only screen and (max-width: 750px) {
+  body.en .m_more {
+    width: 132px; } }
+
+body.en .select_box {
+  width: 140px; }

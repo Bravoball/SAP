@@ -434,3 +434,81 @@ footer
 				+rwd(750px)	
 					margin-left: 0
 					display: block
+
+
+
+body.en
+	header
+		.ham
+			+rwd(1200px)
+				display: block
+		nav
+			+rwd(1200px)
+				background-color: $grey
+				width: 250px
+				height: 100vh
+				padding-top: 70px
+				margin-top: 0
+				margin-right: 0
+				display: none
+				position: fixed
+				right: 0
+				box-shadow: -4px 0px 10px rgba(0,0,0,0.1)
+			ul
+				+rwd(1200px)
+					display: block
+					margin-bottom: 30px
+				li
+					+rwd(1400px)
+					    padding: 8px 10px 30px
+					+rwd(1200px)
+						display: block
+						text-align: left
+						padding: 0
+						margin-bottom: 10px
+					span, &>a
+						+rwd(1200px)
+							padding: 5px 10px 5px 40px
+							display: block
+					.sub
+						width: 360px
+						margin-left: -180px
+						+rwd(1200px)
+							width: 100%
+							position: relative
+							top: 0
+							left: initial
+							margin-left: 0
+							box-shadow: 0 0px 0px 0px rgba(0,0,0,0) inset
+						a
+							+rwd(1200px)
+								opacity: 0.68
+								font-size: 14px
+								line-height: 28px
+								margin-left: 18px
+								padding: 5px 24px
+	footer
+		.inner
+			.f_logo
+				width: 220px
+				margin-right: 40px
+				img
+					width: 100%
+			.main
+				width: 410px
+				margin-right: 10px
+				+rwd(750px)
+					width: 270px
+				.row
+					p
+						font-size: 14px	
+					&.links
+						text-align: left
+						a
+							+rwd(750px)
+								margin-bottom: 10px
+	.m_more
+		+rwd(750px)
+			width: 132px
+	.select_box
+		width: 140px

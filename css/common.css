@@ -525,6 +525,7 @@ body.en header nav ul li .sub {
 
 body.en footer .inner .f_logo {
   width: 220px;
+  margin: 0 auto;
   margin-right: 40px; }
   body.en footer .inner .f_logo img {
     width: 100%; }

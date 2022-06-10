@@ -112,6 +112,7 @@ section.tool
                 clear: both
             .tag_box
                 float: left
+                margin-bottom: 20px
                 +rwd(750px)
                     float: none
                     width: 340px
@@ -120,6 +121,7 @@ section.tool
                 +rwd(374px)
                     width: 100%
                 a.btn01
+                    margin-bottom: 10px
                     +rwd(1200px)
                         padding: 8px 20px
                     +rwd(750px)
@@ -256,3 +258,23 @@ section.list
                     .cate
                         margin-top: 10px
                         opacity: 0.4
+
+body.en
+    section.tool
+        .inner
+            .tag
+                .tag_box
+                    margin-bottom: 20px
+                    a.btn01
+                        margin-bottom: 10px
+                        +rwd(750px)
+                            padding: 8px 20px
+                            width: 100%
+                            box-sizing: border-box
+                        +rwd(375px)
+                            padding: 8px 20px
+                .search_box
+                    input
+                        +rwd(750px)
+                            width: 100%
+                            margin-bottom: 10px

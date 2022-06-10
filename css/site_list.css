@@ -128,7 +128,8 @@ section.tool {
       display: block;
       clear: both; }
     section.tool .inner .tag .tag_box {
-      float: left; }
+      float: left;
+      margin-bottom: 20px; }
       @media only screen and (max-width: 750px) {
         section.tool .inner .tag .tag_box {
           float: none;
@@ -138,17 +139,19 @@ section.tool {
       @media only screen and (max-width: 374px) {
         section.tool .inner .tag .tag_box {
           width: 100%; } }
-      @media only screen and (max-width: 1200px) {
-        section.tool .inner .tag .tag_box a.btn01 {
-          padding: 8px 20px; } }
-      @media only screen and (max-width: 750px) {
-        section.tool .inner .tag .tag_box a.btn01 {
-          padding: 8px 50px; }
-          section.tool .inner .tag .tag_box a.btn01:nth-child(2n) {
-            margin-right: 0; } }
-      @media only screen and (max-width: 374px) {
-        section.tool .inner .tag .tag_box a.btn01 {
-          padding: 8px 35px; } }
+      section.tool .inner .tag .tag_box a.btn01 {
+        margin-bottom: 10px; }
+        @media only screen and (max-width: 1200px) {
+          section.tool .inner .tag .tag_box a.btn01 {
+            padding: 8px 20px; } }
+        @media only screen and (max-width: 750px) {
+          section.tool .inner .tag .tag_box a.btn01 {
+            padding: 8px 50px; }
+            section.tool .inner .tag .tag_box a.btn01:nth-child(2n) {
+              margin-right: 0; } }
+        @media only screen and (max-width: 374px) {
+          section.tool .inner .tag .tag_box a.btn01 {
+            padding: 8px 35px; } }
     section.tool .inner .tag .search_box {
       float: right; }
       @media only screen and (max-width: 750px) {
@@ -291,3 +294,22 @@ section.list .inner {
         section.list .inner .item_box a .info .cate {
           margin-top: 10px;
           opacity: 0.4; }
+
+body.en section.tool .inner .tag .tag_box {
+  margin-bottom: 20px; }
+  body.en section.tool .inner .tag .tag_box a.btn01 {
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 750px) {
+      body.en section.tool .inner .tag .tag_box a.btn01 {
+        padding: 8px 20px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; } }
+    @media only screen and (max-width: 375px) {
+      body.en section.tool .inner .tag .tag_box a.btn01 {
+        padding: 8px 20px; } }
+
+@media only screen and (max-width: 750px) {
+  body.en section.tool .inner .tag .search_box input {
+    width: 100%;
+    margin-bottom: 10px; } }

@@ -3,15 +3,29 @@
 
 section.kv
     width: 100%
-    height: 768px
+    height: 745px
     position: relative
+    +rwd(1300px)
+        height: 510px
     +rwd(950px)
-        height: 424px
+        height: 370px
         padding-bottom: 140px
+    +rwd(750px)
+        height: 424px
     .video
-        width: 100%
-        height: 100%
+        width: 1920px
+        height: 745px
         background-color: #fff
+        position: relative
+        left: 50%
+        top: 0
+        transform: translate(-50%,0)
+        +rwd(1300px)
+            width: 1300px
+            height: 510px
+        +rwd(950px)
+            width: 950px
+            height: 370px
         +rwd(750px)
             display: none
         .vsc-controller

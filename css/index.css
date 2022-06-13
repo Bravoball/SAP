@@ -1,16 +1,36 @@
 @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 section.kv {
   width: 100%;
-  height: 768px;
+  height: 745px;
   position: relative; }
+  @media only screen and (max-width: 1300px) {
+    section.kv {
+      height: 510px; } }
   @media only screen and (max-width: 950px) {
     section.kv {
-      height: 424px;
+      height: 370px;
       padding-bottom: 140px; } }
+  @media only screen and (max-width: 750px) {
+    section.kv {
+      height: 424px; } }
   section.kv .video {
-    width: 100%;
-    height: 100%;
-    background-color: #fff; }
+    width: 1920px;
+    height: 745px;
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+    @media only screen and (max-width: 1300px) {
+      section.kv .video {
+        width: 1300px;
+        height: 510px; } }
+    @media only screen and (max-width: 950px) {
+      section.kv .video {
+        width: 950px;
+        height: 370px; } }
     @media only screen and (max-width: 750px) {
       section.kv .video {
         display: none; } }

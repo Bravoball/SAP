@@ -547,6 +547,9 @@ section.lecture {
               background-repeat: no-repeat;
               padding-left: 25px;
               margin-right: 20px; }
+              @media only screen and (max-width: 1200px) {
+                section.lecture .inner .top2 a .info .row .date {
+                  margin-right: 10px; } }
             section.lecture .inner .top2 a .info .row .place {
               display: inline-block;
               vertical-align: top;
@@ -680,6 +683,9 @@ section.lecture {
               background-repeat: no-repeat;
               padding-left: 25px;
               margin-right: 20px; }
+              @media only screen and (max-width: 1200px) {
+                section.lecture .inner .list .item a .row .date {
+                  margin-right: 10px; } }
             section.lecture .inner .list .item a .row .place {
               display: inline-block;
               vertical-align: top;

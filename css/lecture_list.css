@@ -298,6 +298,9 @@ section.list .inner {
             background-repeat: no-repeat;
             padding-left: 25px;
             margin-right: 20px; }
+            @media only screen and (max-width: 1200px) {
+              section.list .inner .top2 a .info .row .date {
+                margin-right: 10px; } }
           section.list .inner .top2 a .info .row .place {
             display: inline-block;
             vertical-align: top;
@@ -480,6 +483,9 @@ section.list2 {
             background-repeat: no-repeat;
             padding-left: 25px;
             margin-right: 20px; }
+            @media only screen and (max-width: 1200px) {
+              section.list2 .inner .main a .row .date {
+                margin-right: 10px; } }
           section.list2 .inner .main a .row .place {
             display: inline-block;
             vertical-align: top;

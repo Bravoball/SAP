@@ -37,7 +37,7 @@ $(document).ready(function(){
                 breakpoint: 750,
                 settings: {
                     arrows: true,
-                    // centerMode: true,
+                    centerMode: true,
 			    }
 		    }
 		]

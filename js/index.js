@@ -30,14 +30,14 @@ $(document).ready(function(){
 			    breakpoint: 1300,
 			    settings: {
                     arrows: false,
-                    centerMode: true,
+                    // centerMode: true,
 			    }
             },
             {
                 breakpoint: 750,
                 settings: {
                     arrows: true,
-                    centerMode: true,
+                    // centerMode: true,
 			    }
 		    }
 		]

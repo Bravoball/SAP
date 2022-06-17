@@ -218,7 +218,8 @@ section.slide {
               background-color: rgba(0, 0, 0, 0.8); }
 
 section.editor {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  overflow: hidden; }
   section.editor .inner {
     width: 1080px;
     margin: 0 auto;

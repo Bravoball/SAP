@@ -207,7 +207,8 @@ section.slide {
       background-image: url(../images/icon04.svg); }
 
 section.editor {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  overflow: hidden; }
   section.editor .inner {
     width: 1080px;
     margin: 0 auto;

@@ -43,6 +43,9 @@ $(document).ready(function(){
 		]
     });
 
+    $('section.site .inner .item_box .item2').slick('slickPause');
+    $('section.site .inner .item_box .item3').slick('slickPause');
+
     $('section.site .inner .main .item_box [class^="item"] a').mouseenter(function(){
         if ($(window).width() >= 1200) {
             $(this).find('p').stop().slideDown(300);
@@ -60,6 +63,39 @@ $(document).ready(function(){
             $('section.site .inner .main .tag span.active').removeClass('active');
             $('section.site .inner .main .item_box [class^="item"].active').fadeOut(300,function(){
                 $('section.site .inner .main .item_box [class^="item"].active').removeClass('active');
+                                
+                $('section.site .inner .item_box [class^="item"]').slick('slickPause');
+                $('section.site .inner .item_box .item'+site_index).slick('slickPlay');
+
+                $('section.site .inner .item_box [class^="item"]').slick('unslick');
+                $('section.site .inner .item_box .item'+site_index).slick({
+                    arrows: false,
+                    infinite: true,
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: 0,
+                    variableWidth: true,
+                    swipe: true,
+                    autoplay: true,
+                    responsive: [
+                        {
+                            breakpoint: 1300,
+                            settings: {
+                                arrows: false,
+                                // centerMode: true,
+                            }
+                        },
+                        {
+                            breakpoint: 750,
+                            settings: {
+                                arrows: true,
+                                centerMode: true,
+                            }
+                        }
+                    ]
+                });
+                
                 $('section.site .inner .main .item_box .item'+site_index).fadeIn(300,function(){
                     $('section.site .inner .main .item_box .item'+site_index).addClass('active');
                 })

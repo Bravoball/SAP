@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 * {
   margin: 0;
-  padding: 0;
-  color: #000;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: 'Noto Sans TC', sans-serif; }
+  padding: 0; }
 
 *:focus {
   outline: none; }
@@ -32,6 +27,13 @@ figure {
   line-height: 0px; }
   figure img {
     width: 100%; }
+
+body {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: 'Noto Sans TC', sans-serif; }
 
 header {
   position: fixed;
@@ -602,3 +604,33 @@ body.en .select_box {
 
 .editor_box b {
   font-weight: bold; }
+
+.editor_box table {
+  max-width: 100%; }
+
+.editor_box img {
+  max-width: 100%;
+  height: auto !important; }
+
+.editor_box figure {
+  line-height: 0px;
+  width: 100%;
+  height: 100%; }
+
+.editor_box figurecaption {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 0.4;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 10px; }
+
+.editor_box .img_box01 span, .editor_box .img_box02 span, .editor_box .yt_box span {
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 0.4;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 10px; }

@@ -558,3 +558,19 @@ body.en footer .inner .main {
 
 body.en .select_box {
   width: 140px; }
+
+.editor_box ul {
+  padding-left: 16px; }
+  .editor_box ul li {
+    list-style-type: disc; }
+
+.editor_box ol {
+  padding-left: 16px; }
+  .editor_box ol li {
+    list-style-type: decimal; }
+
+.editor_box strong {
+  font-weight: bold; }
+
+.editor_box b {
+  font-weight: bold; }

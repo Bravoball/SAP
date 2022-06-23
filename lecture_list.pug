@@ -27,13 +27,21 @@ html
 					.slide_box
 						.slide_area
 							.item_box
-								a.item.active(href="" target="_blank")
-									img(src="images/slide_img.png", alt="")
-								a.item(href="" target="_blank")
-									img(src="images/slide_img.png", alt="")
-								a.item(href="" target="_blank")
-									img(src="images/slide_img.png", alt="")
-								a.item(href="" target="_blank")
+								.item.yt.active
+									.yt_img.active
+										.play
+										.black
+										figure
+											img(src="images/slide_img.png", alt="")
+									.yt_yt(yt="https://www.youtube.com/embed/iOPK9bditdg")
+										iframe(src="" frameborder="0" allowfullscreen)
+								.item
+									a(href="" target="_blank")
+										img(src="images/school_img.png", alt="")
+								.item
+									a(href="" target="_blank")
+										img(src="images/slide_img.png", alt="")
+								.item
 									img(src="images/slide_img.png", alt="")
 							.dot_box
 								.dot.active

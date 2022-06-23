@@ -3,6 +3,18 @@ var slide_nums;
 var slide_auto;
 $(document).ready(function(){
     // slide
+    $('.yt_img').on('click',function(){
+        if($(this).hasClass('active')==true){
+            slide_yt=$('.yt_yt').attr('yt');
+            $('.yt_yt iframe').prop('src',slide_yt);
+            clearInterval(slide_auto);
+            $(this).fadeOut(500,function(){
+                $(this).removeClass('active');
+                $('.yt_yt').addClass('active');
+            })
+        }
+    });
+    
     let _title = $('section.slide .slide_area .item_box .item:eq(0)').data("title");
     $(".slide_title").html(_title);
     slide_nums = $('section.slide .slide_area .item_box .item').length;

@@ -1,0 +1,5 @@
+.editor_box ul li {
+  list-style-type: disc; }
+
+.editor_box ol li {
+  list-style-type: decimal; }

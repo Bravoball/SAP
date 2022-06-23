@@ -3,7 +3,8 @@ var slide_nums;
 var slide_auto;
 var slide_yt;
 $(document).ready(function(){
-    
+				let _title=$('section.slide .slide_area .item_box .item:eq(0)').data("title");
+			$(".slide_title").html(_title); 
     /*** scroll ***/
 	$(window).scroll(windowScroll);
     windowScroll();
@@ -21,9 +22,11 @@ $(document).ready(function(){
         }
     });
 	slide_nums=$('section.slide .slide_area .item_box .item').length;
-	slide_current=$('section.slide .slide_area .item_box .item.active').index();
-	slide_auto=setInterval(bannerAuto,3000);
-	$('section.slide .slide_area .dot_box .dot').on('click',bannerDot);
+    if (slide_nums > 1) {
+        slide_current = $('section.slide .slide_area .item_box .item.active').index();
+        slide_auto=setInterval(bannerAuto,3000);
+        $('section.slide .slide_area .dot_box .dot').on('click',bannerDot);
+    }
 })
 
 var is_banner=false;
@@ -55,6 +58,8 @@ function bannerAct(){
 	$('section.slide .slide_area .item_box .item.active').fadeOut(500,function(){
 		$('section.slide .slide_area .item_box .item.active').removeClass('active');
         $('section.slide .slide_area .item_box .item:eq('+slide_current+')').fadeIn(500,function(){
+			let _title=$(this).data("title");
+			$(".slide_title").html(_title);
             $('section.slide .slide_area .item_box .item:eq('+slide_current+')').addClass('active');
             is_banner=false;
             slide_auto=setInterval(bannerAuto,3000);

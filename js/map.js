@@ -21,7 +21,7 @@ function ZoomControl(controlDiv, map) {
     zoomInButton.style.width = '32px'; 
     zoomInButton.style.height = '32px';
     /* Change this to be the .png image you want to use */
-    zoomInButton.style.backgroundImage = 'url("images/zoomin.png")';
+    zoomInButton.style.backgroundImage = 'url("/assets/images/zoomin.png")';
     controlWrapper.appendChild(zoomInButton);
       
     // Set CSS for the zoomOut
@@ -29,7 +29,7 @@ function ZoomControl(controlDiv, map) {
     zoomOutButton.style.width = '32px'; 
     zoomOutButton.style.height = '32px';
     /* Change this to be the .png image you want to use */
-    zoomOutButton.style.backgroundImage = 'url("images/zoomout.png")';
+    zoomOutButton.style.backgroundImage = 'url("/assets/images/zoomout.png")';
     controlWrapper.appendChild(zoomOutButton);
   
     // Setup the click event listener - zoomIn
@@ -233,7 +233,7 @@ $(document).ready(function(){
         streetViewControl: false,
         fullscreenControl: false,
         draggable: true,
-        center: new google.maps.LatLng(25.0268057, 121.5269301),
+        center: new google.maps.LatLng(lat, lang),
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
@@ -259,13 +259,13 @@ $(document).ready(function(){
     var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
     
-    var image = 'images/pin.png';
+    var image = '/assets/images/pin.png';
     var marker = new google.maps.Marker({
         map: map,
         icon: image,
         // Define the place with a location, and a query string.
         place: {
-            location: {lat: 25.0268057, lng: 121.5269301},
+            location: {lat: lat, lng: lang},
             query: 'Google, Taiwan'
         },
             // Attributions help users find your site again.

@@ -596,6 +596,13 @@ section.lecture {
       section.lecture .inner .list .slick-list {
         overflow: hidden;
         margin-bottom: 40px; }
+      section.lecture .inner .list .slick-track {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch; }
       section.lecture .inner .list .slick-dots {
         text-align: center; }
         section.lecture .inner .list .slick-dots li {
@@ -614,7 +621,12 @@ section.lecture {
           section.lecture .inner .list .slick-dots li.slick-active button {
             background-color: rgba(0, 0, 0, 0.8); }
       section.lecture .inner .list .item {
-        display: inline-block;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
         vertical-align: top; }
         @media only screen and (max-width: 750px) {
           section.lecture .inner .list .item {
@@ -625,6 +637,7 @@ section.lecture {
             width: 280px; } }
         section.lecture .inner .list .item a {
           display: inline-block;
+          height: 100%;
           vertical-align: top;
           background-color: #f6f6f6;
           width: 336px;

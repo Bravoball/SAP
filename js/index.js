@@ -63,7 +63,7 @@ $(document).ready(function(){
             $('section.site .inner .main .tag span.active').removeClass('active');
             $('section.site .inner .main .item_box [class^="item"].active').fadeOut(300,function(){
                 $('section.site .inner .main .item_box [class^="item"].active').removeClass('active');
-                                
+
                 $('section.site .inner .item_box [class^="item"]').slick('slickPause');
                 $('section.site .inner .item_box .item'+site_index).slick('slickPlay');
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
                         }
                     ]
                 });
-                
+
                 $('section.site .inner .main .item_box .item'+site_index).fadeIn(300,function(){
                     $('section.site .inner .main .item_box .item'+site_index).addClass('active');
                 })

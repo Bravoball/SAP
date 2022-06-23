@@ -541,6 +541,9 @@ section.lecture
             .slick-list
                 overflow: hidden
                 margin-bottom: 40px
+            .slick-track
+                display: flex
+                align-items: stretch
             .slick-dots
                 text-align: center
                 li
@@ -559,7 +562,8 @@ section.lecture
                     &.slick-active button
                         background-color: rgba(0,0,0,0.8)
             .item
-                display: inline-block
+                display: inline-flex
+                align-items: stretch
                 vertical-align: top
                 +rwd(750px)
                     width: 336px
@@ -568,6 +572,7 @@ section.lecture
                     width: 280px
                 a
                     display: inline-block
+                    height: 100%
                     vertical-align: top
                     background-color: $grey
                     width: 336px

@@ -68,9 +68,15 @@ section.slide
                         top: 0
                         display: none
                         line-height: 0px
-                        img
+                        padding-top: 56.25%;
+                        background: #e0e0de
+                        >img
+                            position: absolute
+                            left: 0
+                            top: 0
                             width: 100%
                             height: 100%
+                            object-fit: contain
                         &.active
                             display: block
                         &.yt
@@ -81,6 +87,9 @@ section.slide
                                 display: none
                                 position: relative
                                 z-index: 2
+                                position: absolute
+                                left: 0
+                                top: 0
                                 width: 100%
                                 height: 100%
                                 &.active
@@ -110,11 +119,16 @@ section.slide
                                     width: 100%
                                     height: 100%
                                     img
+                                        width: 100%
+                                        height: 100%
+                                        object-fit: cover
 
                             .yt_yt
+                                position: absolute
+                                left: 0
+                                top: 0
                                 width: 100%
                                 height: 100%
-                                height: 607px
                                 display: none
                                 +rwd(1200px)
                                     height: 411px
@@ -128,14 +142,14 @@ section.slide
                                     width: 100%
                                     height: 100%
                 .dot_box
-                    margin-right: 5px
+                    margin-right: 1px
                     margin-top: 20px
                     text-align: right
                     .dot
                         display: inline-block
                         vertical-align: top
-                        margin-left: 12px
-                        margin-right: -4px
+                        margin-left: 8px
+                        margin-right: 0
                         border: none
                         text-indent: -9999px
                         background-color: transparent

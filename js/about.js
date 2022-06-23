@@ -8,15 +8,19 @@ var slide_auto02;
 $(document).ready(function(){
 
     // slide
-	slide_nums01=$('.slide_box01 .slide_area .item_box .item').length;
-	slide_current01=$('.slide_box01 .slide_area .item_box .item.active').index();
-	slide_auto01=setInterval(bannerAuto,3000);
-	$('.slide_box01 .slide_area .dot_box .dot').on('click',bannerDot);
-    
-	slide_nums02=$('.slide_box02 .slide_area .item_box .item').length;
-	slide_current02=$('.slide_box02 .slide_area .item_box .item.active').index();
-	slide_auto02=setInterval(bannerAuto2,3000);
-	$('.slide_box02 .slide_area .dot_box .dot').on('click',bannerDot2);
+    slide_nums01 = $('.slide_box01 .slide_area .item_box .item').length;
+    if (slide_nums01 > 1) {
+        slide_current01 = $('.slide_box01 .slide_area .item_box .item.active').index();
+        slide_auto01 = setInterval(bannerAuto, 3000);
+        $('.slide_box01 .slide_area .dot_box .dot').on('click', bannerDot);
+    }
+
+    slide_nums02 = $('.slide_box02 .slide_area .item_box .item').length;
+    if (slide_nums02 > 1) {
+        slide_current02 = $('.slide_box02 .slide_area .item_box .item.active').index();
+        slide_auto02 = setInterval(bannerAuto2, 3000);
+        $('.slide_box02 .slide_area .dot_box .dot').on('click', bannerDot2);
+    }
 
     // more
     $('.more').on('click',function(){

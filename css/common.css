@@ -559,6 +559,34 @@ body.en footer .inner .main {
 body.en .select_box {
   width: 140px; }
 
+.editor_box h1 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.editor_box h2 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.editor_box h3 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.editor_box p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #1a1a1a; }
+
+.editor_box a {
+  color: revert;
+  text-decoration: underline; }
+
 .editor_box ul {
   padding-left: 16px; }
   .editor_box ul li {

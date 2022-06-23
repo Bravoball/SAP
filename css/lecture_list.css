@@ -499,9 +499,18 @@ section.list2 {
         section.list2 .inner .tag .info .total {
           float: right; }
     section.list2 .inner .main {
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; }
       @media only screen and (max-width: 750px) {
         section.list2 .inner .main {
+          display: block;
           width: 336px;
           margin: 0 auto;
           margin-bottom: 80px; } }

@@ -450,7 +450,11 @@ section.list2
                     float: right
         .main
             margin-bottom: 60px
-            +rwd(750px)
+            display: flex
+            flex-wrap: wrap
+            align-items: stretch
+            +rwd(750px)  
+                display: block              
                 width: 336px
                 margin: 0 auto
                 margin-bottom: 80px

@@ -22,8 +22,8 @@ section.kv
         top: 0
         transform: translate(-50%,0)
         +rwd(1300px)
-            min-width: none
-            min-height: none
+            min-width: initial
+            min-height: initial
             width: 1300px
             height: 510px
         +rwd(950px)
@@ -544,8 +544,8 @@ section.lecture
                 overflow: hidden
                 margin-bottom: 40px
             .slick-track
-                display: flex
-                align-items: stretch
+                display: flex                
+                align-items: stretch                
             .slick-dots
                 text-align: center
                 li
@@ -568,6 +568,7 @@ section.lecture
                 align-items: stretch
                 vertical-align: top
                 +rwd(750px)
+                    flex-direction: column
                     width: 336px
                     margin-right: 20px
                 +rwd(374px)

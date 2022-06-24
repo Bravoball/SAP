@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 section.kv {
   width: 100%;
-  height: 745px;
   position: relative;
   overflow: hidden; }
   @media only screen and (max-width: 1300px) {
@@ -15,8 +14,8 @@ section.kv {
     section.kv {
       height: 424px; } }
   section.kv .video {
-    width: 1920px;
-    height: 745px;
+    min-width: 1920px;
+    min-height: 745px;
     background-color: #fff;
     position: relative;
     left: 50%;
@@ -26,6 +25,8 @@ section.kv {
     transform: translate(-50%, 0); }
     @media only screen and (max-width: 1300px) {
       section.kv .video {
+        min-width: none;
+        min-height: none;
         width: 1300px;
         height: 510px; } }
     @media only screen and (max-width: 950px) {

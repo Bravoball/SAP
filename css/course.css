@@ -182,6 +182,9 @@ section.slide {
           @media only screen and (max-width: 950px) {
             section.slide .inner .slide_box .info_area .download {
               margin-top: 40px; } }
+    section.slide .inner .school_box a {
+      display: inline-block;
+      vertical-align: middle; }
     section.slide .inner .school_box figure {
       display: inline-block;
       vertical-align: middle;
